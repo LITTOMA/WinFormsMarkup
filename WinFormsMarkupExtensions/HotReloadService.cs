@@ -36,8 +36,36 @@ public class HotReloadApplicationContext : System.Windows.Forms.ApplicationConte
     {
         MainForm.Invoke(() =>
         {
+            var newForm = _mainFormBuilder();
+            MainForm
+                .Text(newForm.Text)
+                .Size(newForm.Size)
+                .FormBorderStyle(newForm.FormBorderStyle)
+                .StartPosition(newForm.StartPosition)
+                .WindowState(newForm.WindowState)
+                .MaximizeBox(newForm.MaximizeBox)
+                .MinimizeBox(newForm.MinimizeBox)
+                .ShowIcon(newForm.ShowIcon)
+                .ShowInTaskbar(newForm.ShowInTaskbar)
+                .Icon(newForm.Icon)
+                .Font(newForm.Font)
+                .BackColor(newForm.BackColor)
+                .ForeColor(newForm.ForeColor)
+                .Opacity(newForm.Opacity)
+                .AcceptButton(newForm.AcceptButton)
+                .CancelButton(newForm.CancelButton)
+                .AutoScaleMode(newForm.AutoScaleMode)
+                .AutoScaleDimensions(newForm.AutoScaleDimensions)
+                .AutoScaleBaseSize(newForm.AutoScaleBaseSize)
+                .AutoScroll(newForm.AutoScroll)
+                .AutoScrollMargin(newForm.AutoScrollMargin)
+                .AutoScrollMinSize(newForm.AutoScrollMinSize)
+                .AutoScrollPosition(newForm.AutoScrollPosition)
+                .AutoScrollOffset(newForm.AutoScrollOffset);
+
             MainForm.Controls.Clear();
-            MainForm.Controls.AddRange(_mainFormBuilder().Controls.Cast<System.Windows.Forms.Control>().ToArray());
+            MainForm.Controls.AddRange(newForm.Controls.Cast<System.Windows.Forms.Control>().ToArray());
+
         });
     }
 

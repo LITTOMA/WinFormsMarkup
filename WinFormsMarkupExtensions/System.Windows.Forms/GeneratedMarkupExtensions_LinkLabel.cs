@@ -14,9 +14,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static LinkLabel ActiveLinkColor(this LinkLabel control, int red, int green, int blue, int alpha)
+        {
+            control.ActiveLinkColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel ActiveLinkColor(this LinkLabel control, Color color)
+        {
+            control.ActiveLinkColor = color;
+            return control;
+        }
+
         public static LinkLabel DisabledLinkColor(this LinkLabel control, int red, int green, int blue)
         {
             control.DisabledLinkColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel DisabledLinkColor(this LinkLabel control, int red, int green, int blue, int alpha)
+        {
+            control.DisabledLinkColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel DisabledLinkColor(this LinkLabel control, Color color)
+        {
+            control.DisabledLinkColor = color;
             return control;
         }
 
@@ -41,6 +65,18 @@ namespace WinFormsMarkup
         public static LinkLabel LinkColor(this LinkLabel control, int red, int green, int blue)
         {
             control.LinkColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel LinkColor(this LinkLabel control, int red, int green, int blue, int alpha)
+        {
+            control.LinkColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel LinkColor(this LinkLabel control, Color color)
+        {
+            control.LinkColor = color;
             return control;
         }
 
@@ -71,6 +107,18 @@ namespace WinFormsMarkup
         public static LinkLabel VisitedLinkColor(this LinkLabel control, int red, int green, int blue)
         {
             control.VisitedLinkColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel VisitedLinkColor(this LinkLabel control, int red, int green, int blue, int alpha)
+        {
+            control.VisitedLinkColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel VisitedLinkColor(this LinkLabel control, Color color)
+        {
+            control.VisitedLinkColor = color;
             return control;
         }
 
@@ -206,6 +254,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static LinkLabel AutoScrollOffset(this LinkLabel control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static LinkLabel DataContext(this LinkLabel control, Object value)
         {
             control.DataContext = value;
@@ -218,6 +272,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static LinkLabel BackColor(this LinkLabel control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel BackColor(this LinkLabel control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static LinkLabel BindingContext(this LinkLabel control, BindingContext value)
         {
             control.BindingContext = value;
@@ -227,6 +293,18 @@ namespace WinFormsMarkup
         public static LinkLabel Bounds(this LinkLabel control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static LinkLabel Bounds(this LinkLabel control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static LinkLabel Bounds(this LinkLabel control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -245,6 +323,12 @@ namespace WinFormsMarkup
         public static LinkLabel ClientSize(this LinkLabel control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static LinkLabel ClientSize(this LinkLabel control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -278,9 +362,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static LinkLabel Font(this LinkLabel control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static LinkLabel ForeColor(this LinkLabel control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel ForeColor(this LinkLabel control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static LinkLabel ForeColor(this LinkLabel control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -308,6 +410,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static LinkLabel Location(this LinkLabel control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static LinkLabel Margin(this LinkLabel control, Padding value)
         {
             control.Margin = value;
@@ -320,9 +428,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static LinkLabel MaximumSize(this LinkLabel control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static LinkLabel MinimumSize(this LinkLabel control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static LinkLabel MinimumSize(this LinkLabel control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -353,6 +473,12 @@ namespace WinFormsMarkup
         public static LinkLabel Size(this LinkLabel control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static LinkLabel Size(this LinkLabel control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -839,6 +965,12 @@ namespace WinFormsMarkup
         public static LinkLabel AddTo(this LinkLabel control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static LinkLabel Assign(this LinkLabel control, out LinkLabel variable)
+        {
+            variable = control;
             return control;
         }
 

@@ -25,6 +25,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Splitter ForeColor(this Splitter control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Splitter ForeColor(this Splitter control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static Splitter BackgroundImage(this Splitter control, Image value)
         {
             control.BackgroundImage = value;
@@ -40,6 +52,12 @@ namespace WinFormsMarkup
         public static Splitter Font(this Splitter control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.Font = new Font(familyName, emSize, style);
+            return control;
+        }
+
+        public static Splitter Font(this Splitter control, Font font)
+        {
+            control.Font = font;
             return control;
         }
 
@@ -127,6 +145,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Splitter AutoScrollOffset(this Splitter control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static Splitter DataContext(this Splitter control, Object value)
         {
             control.DataContext = value;
@@ -139,6 +163,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Splitter BackColor(this Splitter control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Splitter BackColor(this Splitter control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static Splitter BindingContext(this Splitter control, BindingContext value)
         {
             control.BindingContext = value;
@@ -148,6 +184,18 @@ namespace WinFormsMarkup
         public static Splitter Bounds(this Splitter control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static Splitter Bounds(this Splitter control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static Splitter Bounds(this Splitter control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -166,6 +214,12 @@ namespace WinFormsMarkup
         public static Splitter ClientSize(this Splitter control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static Splitter ClientSize(this Splitter control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -211,6 +265,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Splitter Location(this Splitter control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static Splitter Margin(this Splitter control, Padding value)
         {
             control.Margin = value;
@@ -223,9 +283,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Splitter MaximumSize(this Splitter control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static Splitter MinimumSize(this Splitter control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static Splitter MinimumSize(this Splitter control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -256,6 +328,12 @@ namespace WinFormsMarkup
         public static Splitter Size(this Splitter control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static Splitter Size(this Splitter control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -748,6 +826,12 @@ namespace WinFormsMarkup
         public static Splitter AddTo(this Splitter control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static Splitter Assign(this Splitter control, out Splitter variable)
+        {
+            variable = control;
             return control;
         }
 

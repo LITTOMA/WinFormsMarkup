@@ -25,6 +25,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabControl BackColor(this TabControl control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static TabControl BackColor(this TabControl control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static TabControl BackgroundImage(this TabControl control, Image value)
         {
             control.BackgroundImage = value;
@@ -40,6 +52,18 @@ namespace WinFormsMarkup
         public static TabControl ForeColor(this TabControl control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static TabControl ForeColor(this TabControl control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static TabControl ForeColor(this TabControl control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -67,6 +91,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabControl ItemSize(this TabControl control, Size size)
+        {
+            control.ItemSize = size;
+            return control;
+        }
+
         public static TabControl Multiline(this TabControl control, Boolean value)
         {
             control.Multiline = value;
@@ -76,6 +106,12 @@ namespace WinFormsMarkup
         public static TabControl Padding(this TabControl control, int x, int y)
         {
             control.Padding = new Point(x, y);
+            return control;
+        }
+
+        public static TabControl Padding(this TabControl control, Point point)
+        {
+            control.Padding = point;
             return control;
         }
 
@@ -163,6 +199,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabControl AutoScrollOffset(this TabControl control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static TabControl DataContext(this TabControl control, Object value)
         {
             control.DataContext = value;
@@ -181,6 +223,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabControl Bounds(this TabControl control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static TabControl Bounds(this TabControl control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static TabControl Capture(this TabControl control, Boolean value)
         {
             control.Capture = value;
@@ -196,6 +250,12 @@ namespace WinFormsMarkup
         public static TabControl ClientSize(this TabControl control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static TabControl ClientSize(this TabControl control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -229,6 +289,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabControl Font(this TabControl control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static TabControl Height(this TabControl control, Int32 value)
         {
             control.Height = value;
@@ -253,6 +319,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabControl Location(this TabControl control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static TabControl Margin(this TabControl control, Padding value)
         {
             control.Margin = value;
@@ -265,9 +337,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabControl MaximumSize(this TabControl control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static TabControl MinimumSize(this TabControl control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static TabControl MinimumSize(this TabControl control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -298,6 +382,12 @@ namespace WinFormsMarkup
         public static TabControl Size(this TabControl control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static TabControl Size(this TabControl control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -826,6 +916,12 @@ namespace WinFormsMarkup
         public static TabControl AddTo(this TabControl control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static TabControl Assign(this TabControl control, out TabControl variable)
+        {
+            variable = control;
             return control;
         }
 

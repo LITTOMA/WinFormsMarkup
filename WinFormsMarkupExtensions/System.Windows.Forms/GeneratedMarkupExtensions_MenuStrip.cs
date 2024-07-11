@@ -55,15 +55,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip AutoScrollMargin(this MenuStrip control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static MenuStrip AutoScrollMinSize(this MenuStrip control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
             return control;
         }
 
+        public static MenuStrip AutoScrollMinSize(this MenuStrip control, Size size)
+        {
+            control.AutoScrollMinSize = size;
+            return control;
+        }
+
         public static MenuStrip AutoScrollPosition(this MenuStrip control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
+            return control;
+        }
+
+        public static MenuStrip AutoScrollPosition(this MenuStrip control, Point point)
+        {
+            control.AutoScrollPosition = point;
             return control;
         }
 
@@ -97,6 +115,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip BackColor(this MenuStrip control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MenuStrip BackColor(this MenuStrip control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static MenuStrip BindingContext(this MenuStrip control, BindingContext value)
         {
             control.BindingContext = value;
@@ -121,6 +151,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip Font(this MenuStrip control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static MenuStrip DefaultDropDownDirection(this MenuStrip control, ToolStripDropDownDirection value)
         {
             control.DefaultDropDownDirection = value;
@@ -139,6 +175,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip ForeColor(this MenuStrip control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MenuStrip ForeColor(this MenuStrip control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static MenuStrip GripMargin(this MenuStrip control, Padding value)
         {
             control.GripMargin = value;
@@ -148,6 +196,12 @@ namespace WinFormsMarkup
         public static MenuStrip ImageScalingSize(this MenuStrip control, int width, int height)
         {
             control.ImageScalingSize = new Size(width, height);
+            return control;
+        }
+
+        public static MenuStrip ImageScalingSize(this MenuStrip control, Size size)
+        {
+            control.ImageScalingSize = size;
             return control;
         }
 
@@ -223,6 +277,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip AutoScrollOffset(this MenuStrip control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static MenuStrip DataContext(this MenuStrip control, Object value)
         {
             control.DataContext = value;
@@ -247,6 +307,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip Bounds(this MenuStrip control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static MenuStrip Bounds(this MenuStrip control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static MenuStrip Capture(this MenuStrip control, Boolean value)
         {
             control.Capture = value;
@@ -256,6 +328,12 @@ namespace WinFormsMarkup
         public static MenuStrip ClientSize(this MenuStrip control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static MenuStrip ClientSize(this MenuStrip control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -295,6 +373,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip Location(this MenuStrip control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static MenuStrip Margin(this MenuStrip control, Padding value)
         {
             control.Margin = value;
@@ -307,9 +391,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MenuStrip MaximumSize(this MenuStrip control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static MenuStrip MinimumSize(this MenuStrip control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static MenuStrip MinimumSize(this MenuStrip control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -340,6 +436,12 @@ namespace WinFormsMarkup
         public static MenuStrip Size(this MenuStrip control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static MenuStrip Size(this MenuStrip control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -904,6 +1006,12 @@ namespace WinFormsMarkup
         public static MenuStrip AddTo(this MenuStrip control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static MenuStrip Assign(this MenuStrip control, out MenuStrip variable)
+        {
+            variable = control;
             return control;
         }
 

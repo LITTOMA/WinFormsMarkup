@@ -13,6 +13,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker BackColor(this DateTimePicker control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker BackColor(this DateTimePicker control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static DateTimePicker BackgroundImage(this DateTimePicker control, Image value)
         {
             control.BackgroundImage = value;
@@ -31,9 +43,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker CalendarForeColor(this DateTimePicker control, int red, int green, int blue, int alpha)
+        {
+            control.CalendarForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker CalendarForeColor(this DateTimePicker control, Color color)
+        {
+            control.CalendarForeColor = color;
+            return control;
+        }
+
         public static DateTimePicker CalendarFont(this DateTimePicker control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.CalendarFont = new Font(familyName, emSize, style);
+            return control;
+        }
+
+        public static DateTimePicker CalendarFont(this DateTimePicker control, Font font)
+        {
+            control.CalendarFont = font;
             return control;
         }
 
@@ -43,9 +73,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker CalendarTitleBackColor(this DateTimePicker control, int red, int green, int blue, int alpha)
+        {
+            control.CalendarTitleBackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker CalendarTitleBackColor(this DateTimePicker control, Color color)
+        {
+            control.CalendarTitleBackColor = color;
+            return control;
+        }
+
         public static DateTimePicker CalendarTitleForeColor(this DateTimePicker control, int red, int green, int blue)
         {
             control.CalendarTitleForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker CalendarTitleForeColor(this DateTimePicker control, int red, int green, int blue, int alpha)
+        {
+            control.CalendarTitleForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker CalendarTitleForeColor(this DateTimePicker control, Color color)
+        {
+            control.CalendarTitleForeColor = color;
             return control;
         }
 
@@ -55,9 +109,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker CalendarTrailingForeColor(this DateTimePicker control, int red, int green, int blue, int alpha)
+        {
+            control.CalendarTrailingForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker CalendarTrailingForeColor(this DateTimePicker control, Color color)
+        {
+            control.CalendarTrailingForeColor = color;
+            return control;
+        }
+
         public static DateTimePicker CalendarMonthBackground(this DateTimePicker control, int red, int green, int blue)
         {
             control.CalendarMonthBackground = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker CalendarMonthBackground(this DateTimePicker control, int red, int green, int blue, int alpha)
+        {
+            control.CalendarMonthBackground = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker CalendarMonthBackground(this DateTimePicker control, Color color)
+        {
+            control.CalendarMonthBackground = color;
             return control;
         }
 
@@ -82,6 +160,18 @@ namespace WinFormsMarkup
         public static DateTimePicker ForeColor(this DateTimePicker control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker ForeColor(this DateTimePicker control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DateTimePicker ForeColor(this DateTimePicker control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -187,6 +277,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker AutoScrollOffset(this DateTimePicker control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static DateTimePicker DataContext(this DateTimePicker control, Object value)
         {
             control.DataContext = value;
@@ -205,6 +301,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker Bounds(this DateTimePicker control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static DateTimePicker Bounds(this DateTimePicker control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static DateTimePicker Capture(this DateTimePicker control, Boolean value)
         {
             control.Capture = value;
@@ -220,6 +328,12 @@ namespace WinFormsMarkup
         public static DateTimePicker ClientSize(this DateTimePicker control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static DateTimePicker ClientSize(this DateTimePicker control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -253,6 +367,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker Font(this DateTimePicker control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static DateTimePicker Height(this DateTimePicker control, Int32 value)
         {
             control.Height = value;
@@ -277,6 +397,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker Location(this DateTimePicker control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static DateTimePicker Margin(this DateTimePicker control, Padding value)
         {
             control.Margin = value;
@@ -289,9 +415,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DateTimePicker MaximumSize(this DateTimePicker control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static DateTimePicker MinimumSize(this DateTimePicker control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static DateTimePicker MinimumSize(this DateTimePicker control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -322,6 +460,12 @@ namespace WinFormsMarkup
         public static DateTimePicker Size(this DateTimePicker control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static DateTimePicker Size(this DateTimePicker control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -838,6 +982,12 @@ namespace WinFormsMarkup
         public static DateTimePicker AddTo(this DateTimePicker control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static DateTimePicker Assign(this DateTimePicker control, out DateTimePicker variable)
+        {
+            variable = control;
             return control;
         }
 

@@ -49,15 +49,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ContainerControl AutoScrollMargin(this ContainerControl control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ContainerControl AutoScrollPosition(this ContainerControl control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static ContainerControl AutoScrollPosition(this ContainerControl control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static ContainerControl AutoScrollMinSize(this ContainerControl control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static ContainerControl AutoScrollMinSize(this ContainerControl control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -109,6 +127,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ContainerControl AutoScrollOffset(this ContainerControl control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ContainerControl DataContext(this ContainerControl control, Object value)
         {
             control.DataContext = value;
@@ -118,6 +142,18 @@ namespace WinFormsMarkup
         public static ContainerControl BackColor(this ContainerControl control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ContainerControl BackColor(this ContainerControl control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ContainerControl BackColor(this ContainerControl control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -139,6 +175,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ContainerControl Bounds(this ContainerControl control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ContainerControl Bounds(this ContainerControl control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ContainerControl Capture(this ContainerControl control, Boolean value)
         {
             control.Capture = value;
@@ -154,6 +202,12 @@ namespace WinFormsMarkup
         public static ContainerControl ClientSize(this ContainerControl control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ContainerControl ClientSize(this ContainerControl control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -187,9 +241,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ContainerControl Font(this ContainerControl control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ContainerControl ForeColor(this ContainerControl control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ContainerControl ForeColor(this ContainerControl control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ContainerControl ForeColor(this ContainerControl control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -217,6 +289,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ContainerControl Location(this ContainerControl control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ContainerControl Margin(this ContainerControl control, Padding value)
         {
             control.Margin = value;
@@ -229,9 +307,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ContainerControl MaximumSize(this ContainerControl control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ContainerControl MinimumSize(this ContainerControl control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ContainerControl MinimumSize(this ContainerControl control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -262,6 +352,12 @@ namespace WinFormsMarkup
         public static ContainerControl Size(this ContainerControl control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ContainerControl Size(this ContainerControl control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -778,6 +874,12 @@ namespace WinFormsMarkup
         public static ContainerControl AddControls(this ContainerControl control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static ContainerControl Assign(this ContainerControl control, out ContainerControl variable)
+        {
+            variable = control;
             return control;
         }
 

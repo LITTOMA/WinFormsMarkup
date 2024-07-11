@@ -37,6 +37,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm AutoScaleBaseSize(this ComponentEditorForm control, Size size)
+        {
+            control.AutoScaleBaseSize = size;
+            return control;
+        }
+
         public static ComponentEditorForm AutoScroll(this ComponentEditorForm control, Boolean value)
         {
             control.AutoScroll = value;
@@ -61,6 +67,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm BackColor(this ComponentEditorForm control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ComponentEditorForm BackColor(this ComponentEditorForm control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static ComponentEditorForm FormBorderStyle(this ComponentEditorForm control, FormBorderStyle value)
         {
             control.FormBorderStyle = value;
@@ -79,6 +97,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm ClientSize(this ComponentEditorForm control, Size size)
+        {
+            control.ClientSize = size;
+            return control;
+        }
+
         public static ComponentEditorForm ControlBox(this ComponentEditorForm control, Boolean value)
         {
             control.ControlBox = value;
@@ -91,9 +115,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm DesktopBounds(this ComponentEditorForm control, Point location, Size size)
+        {
+            control.DesktopBounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ComponentEditorForm DesktopBounds(this ComponentEditorForm control, Rectangle rectangle)
+        {
+            control.DesktopBounds = rectangle;
+            return control;
+        }
+
         public static ComponentEditorForm DesktopLocation(this ComponentEditorForm control, int x, int y)
         {
             control.DesktopLocation = new Point(x, y);
+            return control;
+        }
+
+        public static ComponentEditorForm DesktopLocation(this ComponentEditorForm control, Point point)
+        {
+            control.DesktopLocation = point;
             return control;
         }
 
@@ -133,9 +175,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm Location(this ComponentEditorForm control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ComponentEditorForm MaximumSize(this ComponentEditorForm control, int width, int height)
         {
             control.MaximumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ComponentEditorForm MaximumSize(this ComponentEditorForm control, Size size)
+        {
+            control.MaximumSize = size;
             return control;
         }
 
@@ -154,6 +208,12 @@ namespace WinFormsMarkup
         public static ComponentEditorForm MinimumSize(this ComponentEditorForm control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ComponentEditorForm MinimumSize(this ComponentEditorForm control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -217,6 +277,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm Size(this ComponentEditorForm control, Size size)
+        {
+            control.Size = size;
+            return control;
+        }
+
         public static ComponentEditorForm SizeGripStyle(this ComponentEditorForm control, SizeGripStyle value)
         {
             control.SizeGripStyle = value;
@@ -265,6 +331,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm TransparencyKey(this ComponentEditorForm control, int red, int green, int blue, int alpha)
+        {
+            control.TransparencyKey = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ComponentEditorForm TransparencyKey(this ComponentEditorForm control, Color color)
+        {
+            control.TransparencyKey = color;
+            return control;
+        }
+
         public static ComponentEditorForm WindowState(this ComponentEditorForm control, FormWindowState value)
         {
             control.WindowState = value;
@@ -301,15 +379,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm AutoScrollMargin(this ComponentEditorForm control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ComponentEditorForm AutoScrollPosition(this ComponentEditorForm control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static ComponentEditorForm AutoScrollPosition(this ComponentEditorForm control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static ComponentEditorForm AutoScrollMinSize(this ComponentEditorForm control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static ComponentEditorForm AutoScrollMinSize(this ComponentEditorForm control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -355,6 +451,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm AutoScrollOffset(this ComponentEditorForm control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ComponentEditorForm DataContext(this ComponentEditorForm control, Object value)
         {
             control.DataContext = value;
@@ -376,6 +478,18 @@ namespace WinFormsMarkup
         public static ComponentEditorForm Bounds(this ComponentEditorForm control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static ComponentEditorForm Bounds(this ComponentEditorForm control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ComponentEditorForm Bounds(this ComponentEditorForm control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -421,9 +535,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComponentEditorForm Font(this ComponentEditorForm control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ComponentEditorForm ForeColor(this ComponentEditorForm control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ComponentEditorForm ForeColor(this ComponentEditorForm control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ComponentEditorForm ForeColor(this ComponentEditorForm control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -1090,6 +1222,12 @@ namespace WinFormsMarkup
         public static ComponentEditorForm AddControls(this ComponentEditorForm control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static ComponentEditorForm Assign(this ComponentEditorForm control, out ComponentEditorForm variable)
+        {
+            variable = control;
             return control;
         }
 

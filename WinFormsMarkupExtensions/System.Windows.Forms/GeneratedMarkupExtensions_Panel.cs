@@ -49,15 +49,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Panel AutoScrollMargin(this Panel control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static Panel AutoScrollPosition(this Panel control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static Panel AutoScrollPosition(this Panel control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static Panel AutoScrollMinSize(this Panel control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static Panel AutoScrollMinSize(this Panel control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -103,6 +121,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Panel AutoScrollOffset(this Panel control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static Panel DataContext(this Panel control, Object value)
         {
             control.DataContext = value;
@@ -112,6 +136,18 @@ namespace WinFormsMarkup
         public static Panel BackColor(this Panel control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static Panel BackColor(this Panel control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Panel BackColor(this Panel control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -139,6 +175,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Panel Bounds(this Panel control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static Panel Bounds(this Panel control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static Panel Capture(this Panel control, Boolean value)
         {
             control.Capture = value;
@@ -154,6 +202,12 @@ namespace WinFormsMarkup
         public static Panel ClientSize(this Panel control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static Panel ClientSize(this Panel control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -187,9 +241,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Panel Font(this Panel control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static Panel ForeColor(this Panel control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static Panel ForeColor(this Panel control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Panel ForeColor(this Panel control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -217,6 +289,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Panel Location(this Panel control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static Panel Margin(this Panel control, Padding value)
         {
             control.Margin = value;
@@ -229,9 +307,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Panel MaximumSize(this Panel control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static Panel MinimumSize(this Panel control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static Panel MinimumSize(this Panel control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -262,6 +352,12 @@ namespace WinFormsMarkup
         public static Panel Size(this Panel control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static Panel Size(this Panel control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -754,6 +850,12 @@ namespace WinFormsMarkup
         public static Panel AddTo(this Panel control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static Panel Assign(this Panel control, out Panel variable)
+        {
+            variable = control;
             return control;
         }
 

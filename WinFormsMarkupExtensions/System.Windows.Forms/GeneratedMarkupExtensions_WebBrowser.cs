@@ -80,15 +80,45 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static WebBrowser BackColor(this WebBrowser control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static WebBrowser BackColor(this WebBrowser control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static WebBrowser Font(this WebBrowser control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.Font = new Font(familyName, emSize, style);
             return control;
         }
 
+        public static WebBrowser Font(this WebBrowser control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static WebBrowser ForeColor(this WebBrowser control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static WebBrowser ForeColor(this WebBrowser control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static WebBrowser ForeColor(this WebBrowser control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -188,6 +218,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static WebBrowser AutoScrollOffset(this WebBrowser control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static WebBrowser DataContext(this WebBrowser control, Object value)
         {
             control.DataContext = value;
@@ -206,6 +242,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static WebBrowser Bounds(this WebBrowser control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static WebBrowser Bounds(this WebBrowser control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static WebBrowser Capture(this WebBrowser control, Boolean value)
         {
             control.Capture = value;
@@ -221,6 +269,12 @@ namespace WinFormsMarkup
         public static WebBrowser ClientSize(this WebBrowser control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static WebBrowser ClientSize(this WebBrowser control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -260,6 +314,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static WebBrowser Location(this WebBrowser control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static WebBrowser Margin(this WebBrowser control, Padding value)
         {
             control.Margin = value;
@@ -272,9 +332,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static WebBrowser MaximumSize(this WebBrowser control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static WebBrowser MinimumSize(this WebBrowser control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static WebBrowser MinimumSize(this WebBrowser control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -299,6 +371,12 @@ namespace WinFormsMarkup
         public static WebBrowser Size(this WebBrowser control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static WebBrowser Size(this WebBrowser control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -839,6 +917,12 @@ namespace WinFormsMarkup
         public static WebBrowser AddTo(this WebBrowser control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static WebBrowser Assign(this WebBrowser control, out WebBrowser variable)
+        {
+            variable = control;
             return control;
         }
 

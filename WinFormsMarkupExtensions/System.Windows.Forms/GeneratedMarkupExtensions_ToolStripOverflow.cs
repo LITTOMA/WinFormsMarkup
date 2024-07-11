@@ -73,6 +73,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripOverflow Font(this ToolStripOverflow control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ToolStripOverflow GripMargin(this ToolStripOverflow control, Padding value)
         {
             control.GripMargin = value;
@@ -88,6 +94,12 @@ namespace WinFormsMarkup
         public static ToolStripOverflow Location(this ToolStripOverflow control, int x, int y)
         {
             control.Location = new Point(x, y);
+            return control;
+        }
+
+        public static ToolStripOverflow Location(this ToolStripOverflow control, Point point)
+        {
+            control.Location = point;
             return control;
         }
 
@@ -157,15 +169,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripOverflow AutoScrollMargin(this ToolStripOverflow control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ToolStripOverflow AutoScrollMinSize(this ToolStripOverflow control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
             return control;
         }
 
+        public static ToolStripOverflow AutoScrollMinSize(this ToolStripOverflow control, Size size)
+        {
+            control.AutoScrollMinSize = size;
+            return control;
+        }
+
         public static ToolStripOverflow AutoScrollPosition(this ToolStripOverflow control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
+            return control;
+        }
+
+        public static ToolStripOverflow AutoScrollPosition(this ToolStripOverflow control, Point point)
+        {
+            control.AutoScrollPosition = point;
             return control;
         }
 
@@ -184,6 +214,18 @@ namespace WinFormsMarkup
         public static ToolStripOverflow BackColor(this ToolStripOverflow control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripOverflow BackColor(this ToolStripOverflow control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripOverflow BackColor(this ToolStripOverflow control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -211,9 +253,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripOverflow ForeColor(this ToolStripOverflow control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripOverflow ForeColor(this ToolStripOverflow control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static ToolStripOverflow ImageScalingSize(this ToolStripOverflow control, int width, int height)
         {
             control.ImageScalingSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripOverflow ImageScalingSize(this ToolStripOverflow control, Size size)
+        {
+            control.ImageScalingSize = size;
             return control;
         }
 
@@ -289,6 +349,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripOverflow AutoScrollOffset(this ToolStripOverflow control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ToolStripOverflow DataContext(this ToolStripOverflow control, Object value)
         {
             control.DataContext = value;
@@ -313,6 +379,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripOverflow Bounds(this ToolStripOverflow control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ToolStripOverflow Bounds(this ToolStripOverflow control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ToolStripOverflow Capture(this ToolStripOverflow control, Boolean value)
         {
             control.Capture = value;
@@ -322,6 +400,12 @@ namespace WinFormsMarkup
         public static ToolStripOverflow ClientSize(this ToolStripOverflow control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripOverflow ClientSize(this ToolStripOverflow control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -361,9 +445,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripOverflow MaximumSize(this ToolStripOverflow control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ToolStripOverflow MinimumSize(this ToolStripOverflow control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripOverflow MinimumSize(this ToolStripOverflow control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -382,6 +478,12 @@ namespace WinFormsMarkup
         public static ToolStripOverflow Size(this ToolStripOverflow control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripOverflow Size(this ToolStripOverflow control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -946,6 +1048,12 @@ namespace WinFormsMarkup
         public static ToolStripOverflow AddTo(this ToolStripOverflow control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static ToolStripOverflow Assign(this ToolStripOverflow control, out ToolStripOverflow variable)
+        {
+            variable = control;
             return control;
         }
 

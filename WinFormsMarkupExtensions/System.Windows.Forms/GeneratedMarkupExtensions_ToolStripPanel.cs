@@ -25,9 +25,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripPanel AutoScrollMargin(this ToolStripPanel control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ToolStripPanel AutoScrollMinSize(this ToolStripPanel control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripPanel AutoScrollMinSize(this ToolStripPanel control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -127,6 +139,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripPanel AutoScrollPosition(this ToolStripPanel control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static ToolStripPanel AccessibleDefaultActionDescription(this ToolStripPanel control, String value)
         {
             control.AccessibleDefaultActionDescription = value;
@@ -163,6 +181,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripPanel AutoScrollOffset(this ToolStripPanel control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ToolStripPanel DataContext(this ToolStripPanel control, Object value)
         {
             control.DataContext = value;
@@ -172,6 +196,18 @@ namespace WinFormsMarkup
         public static ToolStripPanel BackColor(this ToolStripPanel control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripPanel BackColor(this ToolStripPanel control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripPanel BackColor(this ToolStripPanel control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -193,6 +229,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripPanel Bounds(this ToolStripPanel control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ToolStripPanel Bounds(this ToolStripPanel control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ToolStripPanel Capture(this ToolStripPanel control, Boolean value)
         {
             control.Capture = value;
@@ -208,6 +256,12 @@ namespace WinFormsMarkup
         public static ToolStripPanel ClientSize(this ToolStripPanel control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripPanel ClientSize(this ToolStripPanel control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -235,9 +289,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripPanel Font(this ToolStripPanel control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ToolStripPanel ForeColor(this ToolStripPanel control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripPanel ForeColor(this ToolStripPanel control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripPanel ForeColor(this ToolStripPanel control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -265,6 +337,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripPanel Location(this ToolStripPanel control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ToolStripPanel Margin(this ToolStripPanel control, Padding value)
         {
             control.Margin = value;
@@ -277,9 +355,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripPanel MaximumSize(this ToolStripPanel control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ToolStripPanel MinimumSize(this ToolStripPanel control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripPanel MinimumSize(this ToolStripPanel control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -310,6 +400,12 @@ namespace WinFormsMarkup
         public static ToolStripPanel Size(this ToolStripPanel control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripPanel Size(this ToolStripPanel control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -814,6 +910,12 @@ namespace WinFormsMarkup
         public static ToolStripPanel AddControls(this ToolStripPanel control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static ToolStripPanel Assign(this ToolStripPanel control, out ToolStripPanel variable)
+        {
+            variable = control;
             return control;
         }
 

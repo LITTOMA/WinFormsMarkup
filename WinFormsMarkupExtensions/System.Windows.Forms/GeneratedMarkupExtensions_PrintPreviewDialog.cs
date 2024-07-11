@@ -44,6 +44,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog BackColor(this PrintPreviewDialog control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PrintPreviewDialog BackColor(this PrintPreviewDialog control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static PrintPreviewDialog CancelButton(this PrintPreviewDialog control, IButtonControl value)
         {
             control.CancelButton = value;
@@ -98,6 +110,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog MaximumSize(this PrintPreviewDialog control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static PrintPreviewDialog MaximizeBox(this PrintPreviewDialog control, Boolean value)
         {
             control.MaximizeBox = value;
@@ -116,6 +134,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog MinimumSize(this PrintPreviewDialog control, Size size)
+        {
+            control.MinimumSize = size;
+            return control;
+        }
+
         public static PrintPreviewDialog Padding(this PrintPreviewDialog control, Padding value)
         {
             control.Padding = value;
@@ -125,6 +149,12 @@ namespace WinFormsMarkup
         public static PrintPreviewDialog Size(this PrintPreviewDialog control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static PrintPreviewDialog Size(this PrintPreviewDialog control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -143,6 +173,18 @@ namespace WinFormsMarkup
         public static PrintPreviewDialog TransparencyKey(this PrintPreviewDialog control, int red, int green, int blue)
         {
             control.TransparencyKey = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PrintPreviewDialog TransparencyKey(this PrintPreviewDialog control, int red, int green, int blue, int alpha)
+        {
+            control.TransparencyKey = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PrintPreviewDialog TransparencyKey(this PrintPreviewDialog control, Color color)
+        {
+            control.TransparencyKey = color;
             return control;
         }
 
@@ -194,6 +236,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog Location(this PrintPreviewDialog control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static PrintPreviewDialog Tag(this PrintPreviewDialog control, Object value)
         {
             control.Tag = value;
@@ -236,9 +284,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog AutoScrollMargin(this PrintPreviewDialog control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static PrintPreviewDialog AutoScrollMinSize(this PrintPreviewDialog control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static PrintPreviewDialog AutoScrollMinSize(this PrintPreviewDialog control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -257,6 +317,18 @@ namespace WinFormsMarkup
         public static PrintPreviewDialog ForeColor(this PrintPreviewDialog control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PrintPreviewDialog ForeColor(this PrintPreviewDialog control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PrintPreviewDialog ForeColor(this PrintPreviewDialog control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -296,6 +368,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog Font(this PrintPreviewDialog control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static PrintPreviewDialog UseAntiAlias(this PrintPreviewDialog control, Boolean value)
         {
             control.UseAntiAlias = value;
@@ -305,6 +383,12 @@ namespace WinFormsMarkup
         public static PrintPreviewDialog AutoScaleBaseSize(this PrintPreviewDialog control, int width, int height)
         {
             control.AutoScaleBaseSize = new Size(width, height);
+            return control;
+        }
+
+        public static PrintPreviewDialog AutoScaleBaseSize(this PrintPreviewDialog control, Size size)
+        {
+            control.AutoScaleBaseSize = size;
             return control;
         }
 
@@ -356,15 +440,39 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog ClientSize(this PrintPreviewDialog control, Size size)
+        {
+            control.ClientSize = size;
+            return control;
+        }
+
         public static PrintPreviewDialog DesktopBounds(this PrintPreviewDialog control, int x, int y, int width, int height)
         {
             control.DesktopBounds = new Rectangle(x, y, width, height);
             return control;
         }
 
+        public static PrintPreviewDialog DesktopBounds(this PrintPreviewDialog control, Point location, Size size)
+        {
+            control.DesktopBounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static PrintPreviewDialog DesktopBounds(this PrintPreviewDialog control, Rectangle rectangle)
+        {
+            control.DesktopBounds = rectangle;
+            return control;
+        }
+
         public static PrintPreviewDialog DesktopLocation(this PrintPreviewDialog control, int x, int y)
         {
             control.DesktopLocation = new Point(x, y);
+            return control;
+        }
+
+        public static PrintPreviewDialog DesktopLocation(this PrintPreviewDialog control, Point point)
+        {
+            control.DesktopLocation = point;
             return control;
         }
 
@@ -446,6 +554,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog AutoScrollPosition(this PrintPreviewDialog control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static PrintPreviewDialog AccessibleDefaultActionDescription(this PrintPreviewDialog control, String value)
         {
             control.AccessibleDefaultActionDescription = value;
@@ -458,6 +572,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PrintPreviewDialog AutoScrollOffset(this PrintPreviewDialog control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static PrintPreviewDialog DataContext(this PrintPreviewDialog control, Object value)
         {
             control.DataContext = value;
@@ -467,6 +587,18 @@ namespace WinFormsMarkup
         public static PrintPreviewDialog Bounds(this PrintPreviewDialog control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static PrintPreviewDialog Bounds(this PrintPreviewDialog control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static PrintPreviewDialog Bounds(this PrintPreviewDialog control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -1103,6 +1235,12 @@ namespace WinFormsMarkup
         public static PrintPreviewDialog AddControls(this PrintPreviewDialog control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static PrintPreviewDialog Assign(this PrintPreviewDialog control, out PrintPreviewDialog variable)
+        {
+            variable = control;
             return control;
         }
 

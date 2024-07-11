@@ -73,6 +73,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static CheckedListBox BackColor(this CheckedListBox control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static CheckedListBox BackColor(this CheckedListBox control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static CheckedListBox BackgroundImage(this CheckedListBox control, Image value)
         {
             control.BackgroundImage = value;
@@ -109,9 +121,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static CheckedListBox Font(this CheckedListBox control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static CheckedListBox ForeColor(this CheckedListBox control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static CheckedListBox ForeColor(this CheckedListBox control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static CheckedListBox ForeColor(this CheckedListBox control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -253,6 +283,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static CheckedListBox AutoScrollOffset(this CheckedListBox control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static CheckedListBox DataContext(this CheckedListBox control, Object value)
         {
             control.DataContext = value;
@@ -271,6 +307,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static CheckedListBox Bounds(this CheckedListBox control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static CheckedListBox Bounds(this CheckedListBox control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static CheckedListBox Capture(this CheckedListBox control, Boolean value)
         {
             control.Capture = value;
@@ -286,6 +334,12 @@ namespace WinFormsMarkup
         public static CheckedListBox ClientSize(this CheckedListBox control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static CheckedListBox ClientSize(this CheckedListBox control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -337,6 +391,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static CheckedListBox Location(this CheckedListBox control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static CheckedListBox Margin(this CheckedListBox control, Padding value)
         {
             control.Margin = value;
@@ -349,9 +409,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static CheckedListBox MaximumSize(this CheckedListBox control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static CheckedListBox MinimumSize(this CheckedListBox control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static CheckedListBox MinimumSize(this CheckedListBox control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -382,6 +454,12 @@ namespace WinFormsMarkup
         public static CheckedListBox Size(this CheckedListBox control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static CheckedListBox Size(this CheckedListBox control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -940,6 +1018,12 @@ namespace WinFormsMarkup
         public static CheckedListBox AddTo(this CheckedListBox control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static CheckedListBox Assign(this CheckedListBox control, out CheckedListBox variable)
+        {
+            variable = control;
             return control;
         }
 

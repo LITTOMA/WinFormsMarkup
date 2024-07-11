@@ -85,6 +85,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static GroupBox AutoScrollOffset(this GroupBox control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static GroupBox DataContext(this GroupBox control, Object value)
         {
             control.DataContext = value;
@@ -94,6 +100,18 @@ namespace WinFormsMarkup
         public static GroupBox BackColor(this GroupBox control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static GroupBox BackColor(this GroupBox control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static GroupBox BackColor(this GroupBox control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -121,6 +139,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static GroupBox Bounds(this GroupBox control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static GroupBox Bounds(this GroupBox control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static GroupBox Capture(this GroupBox control, Boolean value)
         {
             control.Capture = value;
@@ -136,6 +166,12 @@ namespace WinFormsMarkup
         public static GroupBox ClientSize(this GroupBox control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static GroupBox ClientSize(this GroupBox control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -169,9 +205,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static GroupBox Font(this GroupBox control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static GroupBox ForeColor(this GroupBox control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static GroupBox ForeColor(this GroupBox control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static GroupBox ForeColor(this GroupBox control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -199,6 +253,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static GroupBox Location(this GroupBox control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static GroupBox Margin(this GroupBox control, Padding value)
         {
             control.Margin = value;
@@ -211,9 +271,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static GroupBox MaximumSize(this GroupBox control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static GroupBox MinimumSize(this GroupBox control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static GroupBox MinimumSize(this GroupBox control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -244,6 +316,12 @@ namespace WinFormsMarkup
         public static GroupBox Size(this GroupBox control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static GroupBox Size(this GroupBox control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -730,6 +808,12 @@ namespace WinFormsMarkup
         public static GroupBox AddTo(this GroupBox control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static GroupBox Assign(this GroupBox control, out GroupBox variable)
+        {
+            variable = control;
             return control;
         }
 

@@ -31,6 +31,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form AutoScaleBaseSize(this Form control, Size size)
+        {
+            control.AutoScaleBaseSize = size;
+            return control;
+        }
+
         public static Form AutoScroll(this Form control, Boolean value)
         {
             control.AutoScroll = value;
@@ -61,6 +67,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form BackColor(this Form control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Form BackColor(this Form control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static Form FormBorderStyle(this Form control, FormBorderStyle value)
         {
             control.FormBorderStyle = value;
@@ -79,6 +97,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form ClientSize(this Form control, Size size)
+        {
+            control.ClientSize = size;
+            return control;
+        }
+
         public static Form ControlBox(this Form control, Boolean value)
         {
             control.ControlBox = value;
@@ -91,9 +115,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form DesktopBounds(this Form control, Point location, Size size)
+        {
+            control.DesktopBounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static Form DesktopBounds(this Form control, Rectangle rectangle)
+        {
+            control.DesktopBounds = rectangle;
+            return control;
+        }
+
         public static Form DesktopLocation(this Form control, int x, int y)
         {
             control.DesktopLocation = new Point(x, y);
+            return control;
+        }
+
+        public static Form DesktopLocation(this Form control, Point point)
+        {
+            control.DesktopLocation = point;
             return control;
         }
 
@@ -133,9 +175,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form Location(this Form control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static Form MaximumSize(this Form control, int width, int height)
         {
             control.MaximumSize = new Size(width, height);
+            return control;
+        }
+
+        public static Form MaximumSize(this Form control, Size size)
+        {
+            control.MaximumSize = size;
             return control;
         }
 
@@ -154,6 +208,12 @@ namespace WinFormsMarkup
         public static Form MinimumSize(this Form control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static Form MinimumSize(this Form control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -217,6 +277,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form Size(this Form control, Size size)
+        {
+            control.Size = size;
+            return control;
+        }
+
         public static Form SizeGripStyle(this Form control, SizeGripStyle value)
         {
             control.SizeGripStyle = value;
@@ -265,6 +331,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form TransparencyKey(this Form control, int red, int green, int blue, int alpha)
+        {
+            control.TransparencyKey = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Form TransparencyKey(this Form control, Color color)
+        {
+            control.TransparencyKey = color;
+            return control;
+        }
+
         public static Form WindowState(this Form control, FormWindowState value)
         {
             control.WindowState = value;
@@ -301,15 +379,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form AutoScrollMargin(this Form control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static Form AutoScrollPosition(this Form control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static Form AutoScrollPosition(this Form control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static Form AutoScrollMinSize(this Form control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static Form AutoScrollMinSize(this Form control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -355,6 +451,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form AutoScrollOffset(this Form control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static Form DataContext(this Form control, Object value)
         {
             control.DataContext = value;
@@ -376,6 +478,18 @@ namespace WinFormsMarkup
         public static Form Bounds(this Form control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static Form Bounds(this Form control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static Form Bounds(this Form control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -421,9 +535,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Form Font(this Form control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static Form ForeColor(this Form control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static Form ForeColor(this Form control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Form ForeColor(this Form control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -1090,6 +1222,12 @@ namespace WinFormsMarkup
         public static Form AddControls(this Form control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static Form Assign(this Form control, out Form variable)
+        {
+            variable = control;
             return control;
         }
 

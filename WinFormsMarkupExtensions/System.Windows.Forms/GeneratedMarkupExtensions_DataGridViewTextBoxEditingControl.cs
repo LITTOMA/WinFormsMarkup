@@ -127,6 +127,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewTextBoxEditingControl BackColor(this DataGridViewTextBoxEditingControl control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl BackColor(this DataGridViewTextBoxEditingControl control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static DataGridViewTextBoxEditingControl BackgroundImage(this DataGridViewTextBoxEditingControl control, Image value)
         {
             control.BackgroundImage = value;
@@ -148,6 +160,18 @@ namespace WinFormsMarkup
         public static DataGridViewTextBoxEditingControl ForeColor(this DataGridViewTextBoxEditingControl control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl ForeColor(this DataGridViewTextBoxEditingControl control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl ForeColor(this DataGridViewTextBoxEditingControl control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -253,6 +277,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewTextBoxEditingControl AutoScrollOffset(this DataGridViewTextBoxEditingControl control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static DataGridViewTextBoxEditingControl DataContext(this DataGridViewTextBoxEditingControl control, Object value)
         {
             control.DataContext = value;
@@ -271,6 +301,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewTextBoxEditingControl Bounds(this DataGridViewTextBoxEditingControl control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl Bounds(this DataGridViewTextBoxEditingControl control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static DataGridViewTextBoxEditingControl Capture(this DataGridViewTextBoxEditingControl control, Boolean value)
         {
             control.Capture = value;
@@ -286,6 +328,12 @@ namespace WinFormsMarkup
         public static DataGridViewTextBoxEditingControl ClientSize(this DataGridViewTextBoxEditingControl control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl ClientSize(this DataGridViewTextBoxEditingControl control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -319,6 +367,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewTextBoxEditingControl Font(this DataGridViewTextBoxEditingControl control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static DataGridViewTextBoxEditingControl Height(this DataGridViewTextBoxEditingControl control, Int32 value)
         {
             control.Height = value;
@@ -343,6 +397,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewTextBoxEditingControl Location(this DataGridViewTextBoxEditingControl control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static DataGridViewTextBoxEditingControl Margin(this DataGridViewTextBoxEditingControl control, Padding value)
         {
             control.Margin = value;
@@ -355,9 +415,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewTextBoxEditingControl MaximumSize(this DataGridViewTextBoxEditingControl control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static DataGridViewTextBoxEditingControl MinimumSize(this DataGridViewTextBoxEditingControl control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl MinimumSize(this DataGridViewTextBoxEditingControl control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -388,6 +460,12 @@ namespace WinFormsMarkup
         public static DataGridViewTextBoxEditingControl Size(this DataGridViewTextBoxEditingControl control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl Size(this DataGridViewTextBoxEditingControl control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -916,6 +994,12 @@ namespace WinFormsMarkup
         public static DataGridViewTextBoxEditingControl AddTo(this DataGridViewTextBoxEditingControl control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static DataGridViewTextBoxEditingControl Assign(this DataGridViewTextBoxEditingControl control, out DataGridViewTextBoxEditingControl variable)
+        {
+            variable = control;
             return control;
         }
 

@@ -19,15 +19,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ScrollableControl AutoScrollMargin(this ScrollableControl control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ScrollableControl AutoScrollPosition(this ScrollableControl control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static ScrollableControl AutoScrollPosition(this ScrollableControl control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static ScrollableControl AutoScrollMinSize(this ScrollableControl control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static ScrollableControl AutoScrollMinSize(this ScrollableControl control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -79,6 +97,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ScrollableControl AutoScrollOffset(this ScrollableControl control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ScrollableControl DataContext(this ScrollableControl control, Object value)
         {
             control.DataContext = value;
@@ -88,6 +112,18 @@ namespace WinFormsMarkup
         public static ScrollableControl BackColor(this ScrollableControl control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ScrollableControl BackColor(this ScrollableControl control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ScrollableControl BackColor(this ScrollableControl control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -115,6 +151,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ScrollableControl Bounds(this ScrollableControl control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ScrollableControl Bounds(this ScrollableControl control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ScrollableControl Capture(this ScrollableControl control, Boolean value)
         {
             control.Capture = value;
@@ -130,6 +178,12 @@ namespace WinFormsMarkup
         public static ScrollableControl ClientSize(this ScrollableControl control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ScrollableControl ClientSize(this ScrollableControl control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -163,9 +217,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ScrollableControl Font(this ScrollableControl control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ScrollableControl ForeColor(this ScrollableControl control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ScrollableControl ForeColor(this ScrollableControl control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ScrollableControl ForeColor(this ScrollableControl control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -193,6 +265,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ScrollableControl Location(this ScrollableControl control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ScrollableControl Margin(this ScrollableControl control, Padding value)
         {
             control.Margin = value;
@@ -205,9 +283,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ScrollableControl MaximumSize(this ScrollableControl control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ScrollableControl MinimumSize(this ScrollableControl control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ScrollableControl MinimumSize(this ScrollableControl control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -238,6 +328,12 @@ namespace WinFormsMarkup
         public static ScrollableControl Size(this ScrollableControl control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ScrollableControl Size(this ScrollableControl control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -742,6 +838,12 @@ namespace WinFormsMarkup
         public static ScrollableControl AddTo(this ScrollableControl control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static ScrollableControl Assign(this ScrollableControl control, out ScrollableControl variable)
+        {
+            variable = control;
             return control;
         }
 

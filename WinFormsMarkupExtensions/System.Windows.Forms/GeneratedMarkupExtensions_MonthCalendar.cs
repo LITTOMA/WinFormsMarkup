@@ -19,6 +19,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar BackColor(this MonthCalendar control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MonthCalendar BackColor(this MonthCalendar control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static MonthCalendar BackgroundImage(this MonthCalendar control, Image value)
         {
             control.BackgroundImage = value;
@@ -43,6 +55,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar CalendarDimensions(this MonthCalendar control, Size size)
+        {
+            control.CalendarDimensions = size;
+            return control;
+        }
+
         public static MonthCalendar FirstDayOfWeek(this MonthCalendar control, Day value)
         {
             control.FirstDayOfWeek = value;
@@ -52,6 +70,18 @@ namespace WinFormsMarkup
         public static MonthCalendar ForeColor(this MonthCalendar control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static MonthCalendar ForeColor(this MonthCalendar control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MonthCalendar ForeColor(this MonthCalendar control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -145,6 +175,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar Size(this MonthCalendar control, Size size)
+        {
+            control.Size = size;
+            return control;
+        }
+
         public static MonthCalendar Text(this MonthCalendar control, String value)
         {
             control.Text = value;
@@ -163,15 +199,51 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar TitleBackColor(this MonthCalendar control, int red, int green, int blue, int alpha)
+        {
+            control.TitleBackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MonthCalendar TitleBackColor(this MonthCalendar control, Color color)
+        {
+            control.TitleBackColor = color;
+            return control;
+        }
+
         public static MonthCalendar TitleForeColor(this MonthCalendar control, int red, int green, int blue)
         {
             control.TitleForeColor = Color.FromArgb(red, green, blue);
             return control;
         }
 
+        public static MonthCalendar TitleForeColor(this MonthCalendar control, int red, int green, int blue, int alpha)
+        {
+            control.TitleForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MonthCalendar TitleForeColor(this MonthCalendar control, Color color)
+        {
+            control.TitleForeColor = color;
+            return control;
+        }
+
         public static MonthCalendar TrailingForeColor(this MonthCalendar control, int red, int green, int blue)
         {
             control.TrailingForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static MonthCalendar TrailingForeColor(this MonthCalendar control, int red, int green, int blue, int alpha)
+        {
+            control.TrailingForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MonthCalendar TrailingForeColor(this MonthCalendar control, Color color)
+        {
+            control.TrailingForeColor = color;
             return control;
         }
 
@@ -223,6 +295,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar AutoScrollOffset(this MonthCalendar control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static MonthCalendar DataContext(this MonthCalendar control, Object value)
         {
             control.DataContext = value;
@@ -241,6 +319,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar Bounds(this MonthCalendar control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static MonthCalendar Bounds(this MonthCalendar control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static MonthCalendar Capture(this MonthCalendar control, Boolean value)
         {
             control.Capture = value;
@@ -256,6 +346,12 @@ namespace WinFormsMarkup
         public static MonthCalendar ClientSize(this MonthCalendar control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static MonthCalendar ClientSize(this MonthCalendar control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -289,6 +385,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar Font(this MonthCalendar control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static MonthCalendar Height(this MonthCalendar control, Int32 value)
         {
             control.Height = value;
@@ -313,6 +415,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar Location(this MonthCalendar control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static MonthCalendar Margin(this MonthCalendar control, Padding value)
         {
             control.Margin = value;
@@ -325,9 +433,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MonthCalendar MaximumSize(this MonthCalendar control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static MonthCalendar MinimumSize(this MonthCalendar control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static MonthCalendar MinimumSize(this MonthCalendar control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -850,6 +970,12 @@ namespace WinFormsMarkup
         public static MonthCalendar AddTo(this MonthCalendar control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static MonthCalendar Assign(this MonthCalendar control, out MonthCalendar variable)
+        {
+            variable = control;
             return control;
         }
 

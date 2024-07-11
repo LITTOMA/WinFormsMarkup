@@ -31,9 +31,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContentPanel AutoScrollMargin(this ToolStripContentPanel control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ToolStripContentPanel AutoScrollMinSize(this ToolStripContentPanel control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripContentPanel AutoScrollMinSize(this ToolStripContentPanel control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -46,6 +58,18 @@ namespace WinFormsMarkup
         public static ToolStripContentPanel BackColor(this ToolStripContentPanel control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContentPanel BackColor(this ToolStripContentPanel control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContentPanel BackColor(this ToolStripContentPanel control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -67,15 +91,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContentPanel Location(this ToolStripContentPanel control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ToolStripContentPanel MinimumSize(this ToolStripContentPanel control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
             return control;
         }
 
+        public static ToolStripContentPanel MinimumSize(this ToolStripContentPanel control, Size size)
+        {
+            control.MinimumSize = size;
+            return control;
+        }
+
         public static ToolStripContentPanel MaximumSize(this ToolStripContentPanel control, int width, int height)
         {
             control.MaximumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripContentPanel MaximumSize(this ToolStripContentPanel control, Size size)
+        {
+            control.MaximumSize = size;
             return control;
         }
 
@@ -127,6 +169,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContentPanel AutoScrollPosition(this ToolStripContentPanel control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static ToolStripContentPanel AccessibleDefaultActionDescription(this ToolStripContentPanel control, String value)
         {
             control.AccessibleDefaultActionDescription = value;
@@ -163,6 +211,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContentPanel AutoScrollOffset(this ToolStripContentPanel control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ToolStripContentPanel DataContext(this ToolStripContentPanel control, Object value)
         {
             control.DataContext = value;
@@ -193,6 +247,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContentPanel Bounds(this ToolStripContentPanel control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ToolStripContentPanel Bounds(this ToolStripContentPanel control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ToolStripContentPanel Capture(this ToolStripContentPanel control, Boolean value)
         {
             control.Capture = value;
@@ -202,6 +268,12 @@ namespace WinFormsMarkup
         public static ToolStripContentPanel ClientSize(this ToolStripContentPanel control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripContentPanel ClientSize(this ToolStripContentPanel control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -229,9 +301,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContentPanel Font(this ToolStripContentPanel control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ToolStripContentPanel ForeColor(this ToolStripContentPanel control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContentPanel ForeColor(this ToolStripContentPanel control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContentPanel ForeColor(this ToolStripContentPanel control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -280,6 +370,12 @@ namespace WinFormsMarkup
         public static ToolStripContentPanel Size(this ToolStripContentPanel control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripContentPanel Size(this ToolStripContentPanel control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -778,6 +874,12 @@ namespace WinFormsMarkup
         public static ToolStripContentPanel AddTo(this ToolStripContentPanel control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static ToolStripContentPanel Assign(this ToolStripContentPanel control, out ToolStripContentPanel variable)
+        {
+            variable = control;
             return control;
         }
 

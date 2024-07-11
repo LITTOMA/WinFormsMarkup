@@ -55,6 +55,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewComboBoxEditingControl BackColor(this DataGridViewComboBoxEditingControl control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl BackColor(this DataGridViewComboBoxEditingControl control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static DataGridViewComboBoxEditingControl BackgroundImage(this DataGridViewComboBoxEditingControl control, Image value)
         {
             control.BackgroundImage = value;
@@ -109,6 +121,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewComboBoxEditingControl ForeColor(this DataGridViewComboBoxEditingControl control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl ForeColor(this DataGridViewComboBoxEditingControl control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static DataGridViewComboBoxEditingControl IntegralHeight(this DataGridViewComboBoxEditingControl control, Boolean value)
         {
             control.IntegralHeight = value;
@@ -133,9 +157,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewComboBoxEditingControl MaximumSize(this DataGridViewComboBoxEditingControl control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static DataGridViewComboBoxEditingControl MinimumSize(this DataGridViewComboBoxEditingControl control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl MinimumSize(this DataGridViewComboBoxEditingControl control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -283,6 +319,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewComboBoxEditingControl AutoScrollOffset(this DataGridViewComboBoxEditingControl control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static DataGridViewComboBoxEditingControl DataContext(this DataGridViewComboBoxEditingControl control, Object value)
         {
             control.DataContext = value;
@@ -301,6 +343,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewComboBoxEditingControl Bounds(this DataGridViewComboBoxEditingControl control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl Bounds(this DataGridViewComboBoxEditingControl control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static DataGridViewComboBoxEditingControl Capture(this DataGridViewComboBoxEditingControl control, Boolean value)
         {
             control.Capture = value;
@@ -316,6 +370,12 @@ namespace WinFormsMarkup
         public static DataGridViewComboBoxEditingControl ClientSize(this DataGridViewComboBoxEditingControl control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl ClientSize(this DataGridViewComboBoxEditingControl control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -349,6 +409,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridViewComboBoxEditingControl Font(this DataGridViewComboBoxEditingControl control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static DataGridViewComboBoxEditingControl Height(this DataGridViewComboBoxEditingControl control, Int32 value)
         {
             control.Height = value;
@@ -370,6 +436,12 @@ namespace WinFormsMarkup
         public static DataGridViewComboBoxEditingControl Location(this DataGridViewComboBoxEditingControl control, int x, int y)
         {
             control.Location = new Point(x, y);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl Location(this DataGridViewComboBoxEditingControl control, Point point)
+        {
+            control.Location = point;
             return control;
         }
 
@@ -406,6 +478,12 @@ namespace WinFormsMarkup
         public static DataGridViewComboBoxEditingControl Size(this DataGridViewComboBoxEditingControl control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl Size(this DataGridViewComboBoxEditingControl control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -988,6 +1066,12 @@ namespace WinFormsMarkup
         public static DataGridViewComboBoxEditingControl AddTo(this DataGridViewComboBoxEditingControl control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static DataGridViewComboBoxEditingControl Assign(this DataGridViewComboBoxEditingControl control, out DataGridViewComboBoxEditingControl variable)
+        {
+            variable = control;
             return control;
         }
 

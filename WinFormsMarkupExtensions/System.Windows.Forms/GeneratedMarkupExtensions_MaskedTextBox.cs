@@ -188,6 +188,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MaskedTextBox BackColor(this MaskedTextBox control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MaskedTextBox BackColor(this MaskedTextBox control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static MaskedTextBox BackgroundImage(this MaskedTextBox control, Image value)
         {
             control.BackgroundImage = value;
@@ -209,6 +221,18 @@ namespace WinFormsMarkup
         public static MaskedTextBox ForeColor(this MaskedTextBox control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static MaskedTextBox ForeColor(this MaskedTextBox control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static MaskedTextBox ForeColor(this MaskedTextBox control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -284,6 +308,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MaskedTextBox AutoScrollOffset(this MaskedTextBox control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static MaskedTextBox DataContext(this MaskedTextBox control, Object value)
         {
             control.DataContext = value;
@@ -302,6 +332,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MaskedTextBox Bounds(this MaskedTextBox control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static MaskedTextBox Bounds(this MaskedTextBox control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static MaskedTextBox Capture(this MaskedTextBox control, Boolean value)
         {
             control.Capture = value;
@@ -317,6 +359,12 @@ namespace WinFormsMarkup
         public static MaskedTextBox ClientSize(this MaskedTextBox control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static MaskedTextBox ClientSize(this MaskedTextBox control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -350,6 +398,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MaskedTextBox Font(this MaskedTextBox control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static MaskedTextBox Height(this MaskedTextBox control, Int32 value)
         {
             control.Height = value;
@@ -374,6 +428,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MaskedTextBox Location(this MaskedTextBox control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static MaskedTextBox Margin(this MaskedTextBox control, Padding value)
         {
             control.Margin = value;
@@ -386,9 +446,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static MaskedTextBox MaximumSize(this MaskedTextBox control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static MaskedTextBox MinimumSize(this MaskedTextBox control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static MaskedTextBox MinimumSize(this MaskedTextBox control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -419,6 +491,12 @@ namespace WinFormsMarkup
         public static MaskedTextBox Size(this MaskedTextBox control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static MaskedTextBox Size(this MaskedTextBox control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -971,6 +1049,12 @@ namespace WinFormsMarkup
         public static MaskedTextBox AddTo(this MaskedTextBox control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static MaskedTextBox Assign(this MaskedTextBox control, out MaskedTextBox variable)
+        {
+            variable = control;
             return control;
         }
 

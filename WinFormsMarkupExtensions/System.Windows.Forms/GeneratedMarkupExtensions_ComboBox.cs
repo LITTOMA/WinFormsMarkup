@@ -31,6 +31,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComboBox BackColor(this ComboBox control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ComboBox BackColor(this ComboBox control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static ComboBox BackgroundImage(this ComboBox control, Image value)
         {
             control.BackgroundImage = value;
@@ -85,6 +97,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComboBox ForeColor(this ComboBox control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ComboBox ForeColor(this ComboBox control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static ComboBox IntegralHeight(this ComboBox control, Boolean value)
         {
             control.IntegralHeight = value;
@@ -109,9 +133,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComboBox MaximumSize(this ComboBox control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ComboBox MinimumSize(this ComboBox control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ComboBox MinimumSize(this ComboBox control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -259,6 +295,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComboBox AutoScrollOffset(this ComboBox control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ComboBox DataContext(this ComboBox control, Object value)
         {
             control.DataContext = value;
@@ -277,6 +319,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComboBox Bounds(this ComboBox control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ComboBox Bounds(this ComboBox control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ComboBox Capture(this ComboBox control, Boolean value)
         {
             control.Capture = value;
@@ -292,6 +346,12 @@ namespace WinFormsMarkup
         public static ComboBox ClientSize(this ComboBox control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ComboBox ClientSize(this ComboBox control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -325,6 +385,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ComboBox Font(this ComboBox control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ComboBox Height(this ComboBox control, Int32 value)
         {
             control.Height = value;
@@ -346,6 +412,12 @@ namespace WinFormsMarkup
         public static ComboBox Location(this ComboBox control, int x, int y)
         {
             control.Location = new Point(x, y);
+            return control;
+        }
+
+        public static ComboBox Location(this ComboBox control, Point point)
+        {
+            control.Location = point;
             return control;
         }
 
@@ -382,6 +454,12 @@ namespace WinFormsMarkup
         public static ComboBox Size(this ComboBox control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ComboBox Size(this ComboBox control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -964,6 +1042,12 @@ namespace WinFormsMarkup
         public static ComboBox AddTo(this ComboBox control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static ComboBox Assign(this ComboBox control, out ComboBox variable)
+        {
+            variable = control;
             return control;
         }
 

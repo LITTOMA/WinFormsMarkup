@@ -25,15 +25,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip AutoScrollMargin(this ToolStrip control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ToolStrip AutoScrollMinSize(this ToolStrip control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
             return control;
         }
 
+        public static ToolStrip AutoScrollMinSize(this ToolStrip control, Size size)
+        {
+            control.AutoScrollMinSize = size;
+            return control;
+        }
+
         public static ToolStrip AutoScrollPosition(this ToolStrip control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
+            return control;
+        }
+
+        public static ToolStrip AutoScrollPosition(this ToolStrip control, Point point)
+        {
+            control.AutoScrollPosition = point;
             return control;
         }
 
@@ -67,6 +85,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip BackColor(this ToolStrip control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStrip BackColor(this ToolStrip control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static ToolStrip BindingContext(this ToolStrip control, BindingContext value)
         {
             control.BindingContext = value;
@@ -97,6 +127,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip Font(this ToolStrip control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ToolStrip DefaultDropDownDirection(this ToolStrip control, ToolStripDropDownDirection value)
         {
             control.DefaultDropDownDirection = value;
@@ -115,6 +151,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip ForeColor(this ToolStrip control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStrip ForeColor(this ToolStrip control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static ToolStrip GripStyle(this ToolStrip control, ToolStripGripStyle value)
         {
             control.GripStyle = value;
@@ -130,6 +178,12 @@ namespace WinFormsMarkup
         public static ToolStrip ImageScalingSize(this ToolStrip control, int width, int height)
         {
             control.ImageScalingSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStrip ImageScalingSize(this ToolStrip control, Size size)
+        {
+            control.ImageScalingSize = size;
             return control;
         }
 
@@ -217,6 +271,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip AutoScrollOffset(this ToolStrip control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ToolStrip DataContext(this ToolStrip control, Object value)
         {
             control.DataContext = value;
@@ -241,6 +301,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip Bounds(this ToolStrip control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ToolStrip Bounds(this ToolStrip control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ToolStrip Capture(this ToolStrip control, Boolean value)
         {
             control.Capture = value;
@@ -250,6 +322,12 @@ namespace WinFormsMarkup
         public static ToolStrip ClientSize(this ToolStrip control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStrip ClientSize(this ToolStrip control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -289,6 +367,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip Location(this ToolStrip control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ToolStrip Margin(this ToolStrip control, Padding value)
         {
             control.Margin = value;
@@ -301,9 +385,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStrip MaximumSize(this ToolStrip control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ToolStrip MinimumSize(this ToolStrip control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStrip MinimumSize(this ToolStrip control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -334,6 +430,12 @@ namespace WinFormsMarkup
         public static ToolStrip Size(this ToolStrip control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStrip Size(this ToolStrip control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -886,6 +988,12 @@ namespace WinFormsMarkup
         public static ToolStrip AddTo(this ToolStrip control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static ToolStrip Assign(this ToolStrip control, out ToolStrip variable)
+        {
+            variable = control;
             return control;
         }
 

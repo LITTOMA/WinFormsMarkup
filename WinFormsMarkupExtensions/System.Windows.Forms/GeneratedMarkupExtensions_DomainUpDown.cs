@@ -49,9 +49,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DomainUpDown AutoScrollMargin(this DomainUpDown control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static DomainUpDown AutoScrollMinSize(this DomainUpDown control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static DomainUpDown AutoScrollMinSize(this DomainUpDown control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -64,6 +76,18 @@ namespace WinFormsMarkup
         public static DomainUpDown BackColor(this DomainUpDown control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static DomainUpDown BackColor(this DomainUpDown control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DomainUpDown BackColor(this DomainUpDown control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -97,6 +121,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DomainUpDown ForeColor(this DomainUpDown control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DomainUpDown ForeColor(this DomainUpDown control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static DomainUpDown InterceptArrowKeys(this DomainUpDown control, Boolean value)
         {
             control.InterceptArrowKeys = value;
@@ -109,9 +145,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DomainUpDown MaximumSize(this DomainUpDown control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static DomainUpDown MinimumSize(this DomainUpDown control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static DomainUpDown MinimumSize(this DomainUpDown control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -175,6 +223,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DomainUpDown AutoScrollPosition(this DomainUpDown control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static DomainUpDown AccessibleDefaultActionDescription(this DomainUpDown control, String value)
         {
             control.AccessibleDefaultActionDescription = value;
@@ -217,6 +271,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DomainUpDown AutoScrollOffset(this DomainUpDown control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static DomainUpDown DataContext(this DomainUpDown control, Object value)
         {
             control.DataContext = value;
@@ -226,6 +286,18 @@ namespace WinFormsMarkup
         public static DomainUpDown Bounds(this DomainUpDown control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static DomainUpDown Bounds(this DomainUpDown control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static DomainUpDown Bounds(this DomainUpDown control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -244,6 +316,12 @@ namespace WinFormsMarkup
         public static DomainUpDown ClientSize(this DomainUpDown control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static DomainUpDown ClientSize(this DomainUpDown control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -271,6 +349,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DomainUpDown Font(this DomainUpDown control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static DomainUpDown Height(this DomainUpDown control, Int32 value)
         {
             control.Height = value;
@@ -292,6 +376,12 @@ namespace WinFormsMarkup
         public static DomainUpDown Location(this DomainUpDown control, int x, int y)
         {
             control.Location = new Point(x, y);
+            return control;
+        }
+
+        public static DomainUpDown Location(this DomainUpDown control, Point point)
+        {
+            control.Location = point;
             return control;
         }
 
@@ -328,6 +418,12 @@ namespace WinFormsMarkup
         public static DomainUpDown Size(this DomainUpDown control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static DomainUpDown Size(this DomainUpDown control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -838,6 +934,12 @@ namespace WinFormsMarkup
         public static DomainUpDown AddControls(this DomainUpDown control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static DomainUpDown Assign(this DomainUpDown control, out DomainUpDown variable)
+        {
+            variable = control;
             return control;
         }
 

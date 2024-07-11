@@ -19,15 +19,39 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContainer AutoScrollMargin(this ToolStripContainer control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ToolStripContainer AutoScrollMinSize(this ToolStripContainer control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
             return control;
         }
 
+        public static ToolStripContainer AutoScrollMinSize(this ToolStripContainer control, Size size)
+        {
+            control.AutoScrollMinSize = size;
+            return control;
+        }
+
         public static ToolStripContainer BackColor(this ToolStripContainer control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContainer BackColor(this ToolStripContainer control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContainer BackColor(this ToolStripContainer control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -70,6 +94,18 @@ namespace WinFormsMarkup
         public static ToolStripContainer ForeColor(this ToolStripContainer control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContainer ForeColor(this ToolStripContainer control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripContainer ForeColor(this ToolStripContainer control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -127,6 +163,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContainer AutoScrollPosition(this ToolStripContainer control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static ToolStripContainer AccessibleDefaultActionDescription(this ToolStripContainer control, String value)
         {
             control.AccessibleDefaultActionDescription = value;
@@ -175,6 +217,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContainer AutoScrollOffset(this ToolStripContainer control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ToolStripContainer DataContext(this ToolStripContainer control, Object value)
         {
             control.DataContext = value;
@@ -187,6 +235,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContainer Bounds(this ToolStripContainer control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ToolStripContainer Bounds(this ToolStripContainer control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ToolStripContainer Capture(this ToolStripContainer control, Boolean value)
         {
             control.Capture = value;
@@ -196,6 +256,12 @@ namespace WinFormsMarkup
         public static ToolStripContainer ClientSize(this ToolStripContainer control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripContainer ClientSize(this ToolStripContainer control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -214,6 +280,12 @@ namespace WinFormsMarkup
         public static ToolStripContainer Font(this ToolStripContainer control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.Font = new Font(familyName, emSize, style);
+            return control;
+        }
+
+        public static ToolStripContainer Font(this ToolStripContainer control, Font font)
+        {
+            control.Font = font;
             return control;
         }
 
@@ -241,6 +313,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContainer Location(this ToolStripContainer control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ToolStripContainer Margin(this ToolStripContainer control, Padding value)
         {
             control.Margin = value;
@@ -253,9 +331,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripContainer MaximumSize(this ToolStripContainer control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ToolStripContainer MinimumSize(this ToolStripContainer control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripContainer MinimumSize(this ToolStripContainer control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -286,6 +376,12 @@ namespace WinFormsMarkup
         public static ToolStripContainer Size(this ToolStripContainer control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripContainer Size(this ToolStripContainer control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -802,6 +898,12 @@ namespace WinFormsMarkup
         public static ToolStripContainer AddControls(this ToolStripContainer control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static ToolStripContainer Assign(this ToolStripContainer control, out ToolStripContainer variable)
+        {
+            variable = control;
             return control;
         }
 

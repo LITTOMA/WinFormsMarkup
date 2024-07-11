@@ -73,9 +73,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridView BackColor(this DataGridView control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridView BackColor(this DataGridView control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static DataGridView BackgroundColor(this DataGridView control, int red, int green, int blue)
         {
             control.BackgroundColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static DataGridView BackgroundColor(this DataGridView control, int red, int green, int blue, int alpha)
+        {
+            control.BackgroundColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridView BackgroundColor(this DataGridView control, Color color)
+        {
+            control.BackgroundColor = color;
             return control;
         }
 
@@ -205,15 +229,45 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridView ForeColor(this DataGridView control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridView ForeColor(this DataGridView control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static DataGridView Font(this DataGridView control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.Font = new Font(familyName, emSize, style);
             return control;
         }
 
+        public static DataGridView Font(this DataGridView control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static DataGridView GridColor(this DataGridView control, int red, int green, int blue)
         {
             control.GridColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static DataGridView GridColor(this DataGridView control, int red, int green, int blue, int alpha)
+        {
+            control.GridColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static DataGridView GridColor(this DataGridView control, Color color)
+        {
+            control.GridColor = color;
             return control;
         }
 
@@ -391,6 +445,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridView AutoScrollOffset(this DataGridView control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static DataGridView DataContext(this DataGridView control, Object value)
         {
             control.DataContext = value;
@@ -409,6 +469,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridView Bounds(this DataGridView control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static DataGridView Bounds(this DataGridView control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static DataGridView Capture(this DataGridView control, Boolean value)
         {
             control.Capture = value;
@@ -424,6 +496,12 @@ namespace WinFormsMarkup
         public static DataGridView ClientSize(this DataGridView control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridView ClientSize(this DataGridView control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -475,6 +553,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridView Location(this DataGridView control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static DataGridView Margin(this DataGridView control, Padding value)
         {
             control.Margin = value;
@@ -487,9 +571,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static DataGridView MaximumSize(this DataGridView control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static DataGridView MinimumSize(this DataGridView control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridView MinimumSize(this DataGridView control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -520,6 +616,12 @@ namespace WinFormsMarkup
         public static DataGridView Size(this DataGridView control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static DataGridView Size(this DataGridView control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -1714,6 +1816,12 @@ namespace WinFormsMarkup
         public static DataGridView AddTo(this DataGridView control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static DataGridView Assign(this DataGridView control, out DataGridView variable)
+        {
+            variable = control;
             return control;
         }
 

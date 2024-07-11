@@ -19,6 +19,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid BackColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid BackColor(this PropertyGrid control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static PropertyGrid BackgroundImage(this PropertyGrid control, Image value)
         {
             control.BackgroundImage = value;
@@ -43,9 +55,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid CategoryForeColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CategoryForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CategoryForeColor(this PropertyGrid control, Color color)
+        {
+            control.CategoryForeColor = color;
+            return control;
+        }
+
         public static PropertyGrid CommandsBackColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.CommandsBackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsBackColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CommandsBackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsBackColor(this PropertyGrid control, Color color)
+        {
+            control.CommandsBackColor = color;
             return control;
         }
 
@@ -55,9 +91,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid CommandsForeColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CommandsForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsForeColor(this PropertyGrid control, Color color)
+        {
+            control.CommandsForeColor = color;
+            return control;
+        }
+
         public static PropertyGrid CommandsLinkColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.CommandsLinkColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsLinkColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CommandsLinkColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsLinkColor(this PropertyGrid control, Color color)
+        {
+            control.CommandsLinkColor = color;
             return control;
         }
 
@@ -67,15 +127,51 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid CommandsActiveLinkColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CommandsActiveLinkColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsActiveLinkColor(this PropertyGrid control, Color color)
+        {
+            control.CommandsActiveLinkColor = color;
+            return control;
+        }
+
         public static PropertyGrid CommandsDisabledLinkColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.CommandsDisabledLinkColor = Color.FromArgb(red, green, blue);
             return control;
         }
 
+        public static PropertyGrid CommandsDisabledLinkColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CommandsDisabledLinkColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsDisabledLinkColor(this PropertyGrid control, Color color)
+        {
+            control.CommandsDisabledLinkColor = color;
+            return control;
+        }
+
         public static PropertyGrid CommandsBorderColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.CommandsBorderColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsBorderColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CommandsBorderColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CommandsBorderColor(this PropertyGrid control, Color color)
+        {
+            control.CommandsBorderColor = color;
             return control;
         }
 
@@ -91,9 +187,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid ForeColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid ForeColor(this PropertyGrid control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static PropertyGrid HelpBackColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.HelpBackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid HelpBackColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.HelpBackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid HelpBackColor(this PropertyGrid control, Color color)
+        {
+            control.HelpBackColor = color;
             return control;
         }
 
@@ -103,9 +223,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid HelpForeColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.HelpForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid HelpForeColor(this PropertyGrid control, Color color)
+        {
+            control.HelpForeColor = color;
+            return control;
+        }
+
         public static PropertyGrid HelpBorderColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.HelpBorderColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid HelpBorderColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.HelpBorderColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid HelpBorderColor(this PropertyGrid control, Color color)
+        {
+            control.HelpBorderColor = color;
             return control;
         }
 
@@ -121,9 +265,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid SelectedItemWithFocusBackColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.SelectedItemWithFocusBackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid SelectedItemWithFocusBackColor(this PropertyGrid control, Color color)
+        {
+            control.SelectedItemWithFocusBackColor = color;
+            return control;
+        }
+
         public static PropertyGrid SelectedItemWithFocusForeColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.SelectedItemWithFocusForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid SelectedItemWithFocusForeColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.SelectedItemWithFocusForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid SelectedItemWithFocusForeColor(this PropertyGrid control, Color color)
+        {
+            control.SelectedItemWithFocusForeColor = color;
             return control;
         }
 
@@ -133,9 +301,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid DisabledItemForeColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.DisabledItemForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid DisabledItemForeColor(this PropertyGrid control, Color color)
+        {
+            control.DisabledItemForeColor = color;
+            return control;
+        }
+
         public static PropertyGrid CategorySplitterColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.CategorySplitterColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CategorySplitterColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.CategorySplitterColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid CategorySplitterColor(this PropertyGrid control, Color color)
+        {
+            control.CategorySplitterColor = color;
             return control;
         }
 
@@ -148,6 +340,18 @@ namespace WinFormsMarkup
         public static PropertyGrid LineColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.LineColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid LineColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.LineColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid LineColor(this PropertyGrid control, Color color)
+        {
+            control.LineColor = color;
             return control;
         }
 
@@ -205,15 +409,51 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid ViewBackColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.ViewBackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid ViewBackColor(this PropertyGrid control, Color color)
+        {
+            control.ViewBackColor = color;
+            return control;
+        }
+
         public static PropertyGrid ViewForeColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.ViewForeColor = Color.FromArgb(red, green, blue);
             return control;
         }
 
+        public static PropertyGrid ViewForeColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.ViewForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid ViewForeColor(this PropertyGrid control, Color color)
+        {
+            control.ViewForeColor = color;
+            return control;
+        }
+
         public static PropertyGrid ViewBorderColor(this PropertyGrid control, int red, int green, int blue)
         {
             control.ViewBorderColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid ViewBorderColor(this PropertyGrid control, int red, int green, int blue, int alpha)
+        {
+            control.ViewBorderColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static PropertyGrid ViewBorderColor(this PropertyGrid control, Color color)
+        {
+            control.ViewBorderColor = color;
             return control;
         }
 
@@ -259,15 +499,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid AutoScrollMargin(this PropertyGrid control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static PropertyGrid AutoScrollPosition(this PropertyGrid control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static PropertyGrid AutoScrollPosition(this PropertyGrid control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static PropertyGrid AutoScrollMinSize(this PropertyGrid control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static PropertyGrid AutoScrollMinSize(this PropertyGrid control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -319,6 +577,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid AutoScrollOffset(this PropertyGrid control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static PropertyGrid DataContext(this PropertyGrid control, Object value)
         {
             control.DataContext = value;
@@ -328,6 +592,18 @@ namespace WinFormsMarkup
         public static PropertyGrid Bounds(this PropertyGrid control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static PropertyGrid Bounds(this PropertyGrid control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static PropertyGrid Bounds(this PropertyGrid control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -346,6 +622,12 @@ namespace WinFormsMarkup
         public static PropertyGrid ClientSize(this PropertyGrid control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static PropertyGrid ClientSize(this PropertyGrid control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -379,6 +661,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid Font(this PropertyGrid control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static PropertyGrid Height(this PropertyGrid control, Int32 value)
         {
             control.Height = value;
@@ -403,6 +691,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid Location(this PropertyGrid control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static PropertyGrid Margin(this PropertyGrid control, Padding value)
         {
             control.Margin = value;
@@ -415,9 +709,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static PropertyGrid MaximumSize(this PropertyGrid control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static PropertyGrid MinimumSize(this PropertyGrid control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static PropertyGrid MinimumSize(this PropertyGrid control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -448,6 +754,12 @@ namespace WinFormsMarkup
         public static PropertyGrid Size(this PropertyGrid control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static PropertyGrid Size(this PropertyGrid control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -982,6 +1294,12 @@ namespace WinFormsMarkup
         public static PropertyGrid AddControls(this PropertyGrid control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static PropertyGrid Assign(this PropertyGrid control, out PropertyGrid variable)
+        {
+            variable = control;
             return control;
         }
 

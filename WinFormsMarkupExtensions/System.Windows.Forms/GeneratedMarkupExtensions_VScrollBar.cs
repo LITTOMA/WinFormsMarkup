@@ -25,6 +25,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static VScrollBar BackColor(this VScrollBar control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static VScrollBar BackColor(this VScrollBar control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static VScrollBar BackgroundImage(this VScrollBar control, Image value)
         {
             control.BackgroundImage = value;
@@ -43,9 +55,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static VScrollBar ForeColor(this VScrollBar control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static VScrollBar ForeColor(this VScrollBar control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static VScrollBar Font(this VScrollBar control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.Font = new Font(familyName, emSize, style);
+            return control;
+        }
+
+        public static VScrollBar Font(this VScrollBar control, Font font)
+        {
+            control.Font = font;
             return control;
         }
 
@@ -145,6 +175,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static VScrollBar AutoScrollOffset(this VScrollBar control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static VScrollBar DataContext(this VScrollBar control, Object value)
         {
             control.DataContext = value;
@@ -163,6 +199,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static VScrollBar Bounds(this VScrollBar control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static VScrollBar Bounds(this VScrollBar control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static VScrollBar Capture(this VScrollBar control, Boolean value)
         {
             control.Capture = value;
@@ -178,6 +226,12 @@ namespace WinFormsMarkup
         public static VScrollBar ClientSize(this VScrollBar control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static VScrollBar ClientSize(this VScrollBar control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -229,6 +283,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static VScrollBar Location(this VScrollBar control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static VScrollBar Margin(this VScrollBar control, Padding value)
         {
             control.Margin = value;
@@ -241,9 +301,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static VScrollBar MaximumSize(this VScrollBar control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static VScrollBar MinimumSize(this VScrollBar control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static VScrollBar MinimumSize(this VScrollBar control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -268,6 +340,12 @@ namespace WinFormsMarkup
         public static VScrollBar Size(this VScrollBar control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static VScrollBar Size(this VScrollBar control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -760,6 +838,12 @@ namespace WinFormsMarkup
         public static VScrollBar AddTo(this VScrollBar control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static VScrollBar Assign(this VScrollBar control, out VScrollBar variable)
+        {
+            variable = control;
             return control;
         }
 

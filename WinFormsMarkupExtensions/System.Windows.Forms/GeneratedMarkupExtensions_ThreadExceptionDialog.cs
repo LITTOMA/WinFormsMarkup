@@ -37,6 +37,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog AutoScaleBaseSize(this ThreadExceptionDialog control, Size size)
+        {
+            control.AutoScaleBaseSize = size;
+            return control;
+        }
+
         public static ThreadExceptionDialog AutoScroll(this ThreadExceptionDialog control, Boolean value)
         {
             control.AutoScroll = value;
@@ -61,6 +67,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog BackColor(this ThreadExceptionDialog control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ThreadExceptionDialog BackColor(this ThreadExceptionDialog control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static ThreadExceptionDialog FormBorderStyle(this ThreadExceptionDialog control, FormBorderStyle value)
         {
             control.FormBorderStyle = value;
@@ -79,6 +97,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog ClientSize(this ThreadExceptionDialog control, Size size)
+        {
+            control.ClientSize = size;
+            return control;
+        }
+
         public static ThreadExceptionDialog ControlBox(this ThreadExceptionDialog control, Boolean value)
         {
             control.ControlBox = value;
@@ -91,9 +115,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog DesktopBounds(this ThreadExceptionDialog control, Point location, Size size)
+        {
+            control.DesktopBounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ThreadExceptionDialog DesktopBounds(this ThreadExceptionDialog control, Rectangle rectangle)
+        {
+            control.DesktopBounds = rectangle;
+            return control;
+        }
+
         public static ThreadExceptionDialog DesktopLocation(this ThreadExceptionDialog control, int x, int y)
         {
             control.DesktopLocation = new Point(x, y);
+            return control;
+        }
+
+        public static ThreadExceptionDialog DesktopLocation(this ThreadExceptionDialog control, Point point)
+        {
+            control.DesktopLocation = point;
             return control;
         }
 
@@ -133,9 +175,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog Location(this ThreadExceptionDialog control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static ThreadExceptionDialog MaximumSize(this ThreadExceptionDialog control, int width, int height)
         {
             control.MaximumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ThreadExceptionDialog MaximumSize(this ThreadExceptionDialog control, Size size)
+        {
+            control.MaximumSize = size;
             return control;
         }
 
@@ -154,6 +208,12 @@ namespace WinFormsMarkup
         public static ThreadExceptionDialog MinimumSize(this ThreadExceptionDialog control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ThreadExceptionDialog MinimumSize(this ThreadExceptionDialog control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -217,6 +277,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog Size(this ThreadExceptionDialog control, Size size)
+        {
+            control.Size = size;
+            return control;
+        }
+
         public static ThreadExceptionDialog SizeGripStyle(this ThreadExceptionDialog control, SizeGripStyle value)
         {
             control.SizeGripStyle = value;
@@ -265,6 +331,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog TransparencyKey(this ThreadExceptionDialog control, int red, int green, int blue, int alpha)
+        {
+            control.TransparencyKey = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ThreadExceptionDialog TransparencyKey(this ThreadExceptionDialog control, Color color)
+        {
+            control.TransparencyKey = color;
+            return control;
+        }
+
         public static ThreadExceptionDialog WindowState(this ThreadExceptionDialog control, FormWindowState value)
         {
             control.WindowState = value;
@@ -301,15 +379,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog AutoScrollMargin(this ThreadExceptionDialog control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ThreadExceptionDialog AutoScrollPosition(this ThreadExceptionDialog control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static ThreadExceptionDialog AutoScrollPosition(this ThreadExceptionDialog control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static ThreadExceptionDialog AutoScrollMinSize(this ThreadExceptionDialog control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static ThreadExceptionDialog AutoScrollMinSize(this ThreadExceptionDialog control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -355,6 +451,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog AutoScrollOffset(this ThreadExceptionDialog control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ThreadExceptionDialog DataContext(this ThreadExceptionDialog control, Object value)
         {
             control.DataContext = value;
@@ -376,6 +478,18 @@ namespace WinFormsMarkup
         public static ThreadExceptionDialog Bounds(this ThreadExceptionDialog control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static ThreadExceptionDialog Bounds(this ThreadExceptionDialog control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ThreadExceptionDialog Bounds(this ThreadExceptionDialog control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -421,9 +535,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ThreadExceptionDialog Font(this ThreadExceptionDialog control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ThreadExceptionDialog ForeColor(this ThreadExceptionDialog control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ThreadExceptionDialog ForeColor(this ThreadExceptionDialog control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ThreadExceptionDialog ForeColor(this ThreadExceptionDialog control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -1090,6 +1222,12 @@ namespace WinFormsMarkup
         public static ThreadExceptionDialog AddControls(this ThreadExceptionDialog control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static ThreadExceptionDialog Assign(this ThreadExceptionDialog control, out ThreadExceptionDialog variable)
+        {
+            variable = control;
             return control;
         }
 

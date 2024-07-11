@@ -25,6 +25,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabPage BackColor(this TabPage control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static TabPage BackColor(this TabPage control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static TabPage ImageIndex(this TabPage control, Int32 value)
         {
             control.ImageIndex = value;
@@ -67,15 +79,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabPage Location(this TabPage control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static TabPage MaximumSize(this TabPage control, int width, int height)
         {
             control.MaximumSize = new Size(width, height);
             return control;
         }
 
+        public static TabPage MaximumSize(this TabPage control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static TabPage MinimumSize(this TabPage control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static TabPage MinimumSize(this TabPage control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -127,15 +157,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabPage AutoScrollMargin(this TabPage control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static TabPage AutoScrollPosition(this TabPage control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
             return control;
         }
 
+        public static TabPage AutoScrollPosition(this TabPage control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static TabPage AutoScrollMinSize(this TabPage control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static TabPage AutoScrollMinSize(this TabPage control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -175,6 +223,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabPage AutoScrollOffset(this TabPage control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static TabPage DataContext(this TabPage control, Object value)
         {
             control.DataContext = value;
@@ -205,6 +259,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabPage Bounds(this TabPage control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static TabPage Bounds(this TabPage control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static TabPage Capture(this TabPage control, Boolean value)
         {
             control.Capture = value;
@@ -220,6 +286,12 @@ namespace WinFormsMarkup
         public static TabPage ClientSize(this TabPage control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static TabPage ClientSize(this TabPage control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -241,9 +313,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static TabPage Font(this TabPage control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static TabPage ForeColor(this TabPage control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static TabPage ForeColor(this TabPage control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static TabPage ForeColor(this TabPage control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -298,6 +388,12 @@ namespace WinFormsMarkup
         public static TabPage Size(this TabPage control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static TabPage Size(this TabPage control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -778,6 +874,12 @@ namespace WinFormsMarkup
         public static TabPage AddTo(this TabPage control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static TabPage Assign(this TabPage control, out TabPage variable)
+        {
+            variable = control;
             return control;
         }
 

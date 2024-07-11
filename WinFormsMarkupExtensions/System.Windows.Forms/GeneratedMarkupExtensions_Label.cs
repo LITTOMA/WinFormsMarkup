@@ -158,6 +158,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Label AutoScrollOffset(this Label control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static Label DataContext(this Label control, Object value)
         {
             control.DataContext = value;
@@ -170,6 +176,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Label BackColor(this Label control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Label BackColor(this Label control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static Label BindingContext(this Label control, BindingContext value)
         {
             control.BindingContext = value;
@@ -179,6 +197,18 @@ namespace WinFormsMarkup
         public static Label Bounds(this Label control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static Label Bounds(this Label control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static Label Bounds(this Label control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -197,6 +227,12 @@ namespace WinFormsMarkup
         public static Label ClientSize(this Label control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static Label ClientSize(this Label control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -230,9 +266,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Label Font(this Label control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static Label ForeColor(this Label control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static Label ForeColor(this Label control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static Label ForeColor(this Label control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -260,6 +314,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Label Location(this Label control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static Label Margin(this Label control, Padding value)
         {
             control.Margin = value;
@@ -272,9 +332,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static Label MaximumSize(this Label control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static Label MinimumSize(this Label control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static Label MinimumSize(this Label control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -305,6 +377,12 @@ namespace WinFormsMarkup
         public static Label Size(this Label control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static Label Size(this Label control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -791,6 +869,12 @@ namespace WinFormsMarkup
         public static Label AddTo(this Label control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static Label Assign(this Label control, out Label variable)
+        {
+            variable = control;
             return control;
         }
 

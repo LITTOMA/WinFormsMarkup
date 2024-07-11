@@ -61,9 +61,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static RichTextBox ForeColor(this RichTextBox control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static RichTextBox ForeColor(this RichTextBox control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static RichTextBox Font(this RichTextBox control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.Font = new Font(familyName, emSize, style);
+            return control;
+        }
+
+        public static RichTextBox Font(this RichTextBox control, Font font)
+        {
+            control.Font = font;
             return control;
         }
 
@@ -133,15 +151,45 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static RichTextBox SelectionColor(this RichTextBox control, int red, int green, int blue, int alpha)
+        {
+            control.SelectionColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static RichTextBox SelectionColor(this RichTextBox control, Color color)
+        {
+            control.SelectionColor = color;
+            return control;
+        }
+
         public static RichTextBox SelectionBackColor(this RichTextBox control, int red, int green, int blue)
         {
             control.SelectionBackColor = Color.FromArgb(red, green, blue);
             return control;
         }
 
+        public static RichTextBox SelectionBackColor(this RichTextBox control, int red, int green, int blue, int alpha)
+        {
+            control.SelectionBackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static RichTextBox SelectionBackColor(this RichTextBox control, Color color)
+        {
+            control.SelectionBackColor = color;
+            return control;
+        }
+
         public static RichTextBox SelectionFont(this RichTextBox control, string familyName, float emSize, FontStyle style = FontStyle.Regular)
         {
             control.SelectionFont = new Font(familyName, emSize, style);
+            return control;
+        }
+
+        public static RichTextBox SelectionFont(this RichTextBox control, Font font)
+        {
+            control.SelectionFont = font;
             return control;
         }
 
@@ -229,6 +277,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static RichTextBox BackColor(this RichTextBox control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static RichTextBox BackColor(this RichTextBox control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static RichTextBox BorderStyle(this RichTextBox control, BorderStyle value)
         {
             control.BorderStyle = value;
@@ -313,6 +373,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static RichTextBox AutoScrollOffset(this RichTextBox control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static RichTextBox DataContext(this RichTextBox control, Object value)
         {
             control.DataContext = value;
@@ -331,6 +397,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static RichTextBox Bounds(this RichTextBox control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static RichTextBox Bounds(this RichTextBox control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static RichTextBox Capture(this RichTextBox control, Boolean value)
         {
             control.Capture = value;
@@ -346,6 +424,12 @@ namespace WinFormsMarkup
         public static RichTextBox ClientSize(this RichTextBox control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static RichTextBox ClientSize(this RichTextBox control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -397,6 +481,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static RichTextBox Location(this RichTextBox control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static RichTextBox Margin(this RichTextBox control, Padding value)
         {
             control.Margin = value;
@@ -409,9 +499,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static RichTextBox MaximumSize(this RichTextBox control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static RichTextBox MinimumSize(this RichTextBox control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static RichTextBox MinimumSize(this RichTextBox control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -442,6 +544,12 @@ namespace WinFormsMarkup
         public static RichTextBox Size(this RichTextBox control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static RichTextBox Size(this RichTextBox control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -1006,6 +1114,12 @@ namespace WinFormsMarkup
         public static RichTextBox AddTo(this RichTextBox control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static RichTextBox Assign(this RichTextBox control, out RichTextBox variable)
+        {
+            variable = control;
             return control;
         }
 

@@ -91,6 +91,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripDropDownMenu Font(this ToolStripDropDownMenu control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static ToolStripDropDownMenu GripMargin(this ToolStripDropDownMenu control, Padding value)
         {
             control.GripMargin = value;
@@ -106,6 +112,12 @@ namespace WinFormsMarkup
         public static ToolStripDropDownMenu Location(this ToolStripDropDownMenu control, int x, int y)
         {
             control.Location = new Point(x, y);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu Location(this ToolStripDropDownMenu control, Point point)
+        {
+            control.Location = point;
             return control;
         }
 
@@ -175,15 +187,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripDropDownMenu AutoScrollMargin(this ToolStripDropDownMenu control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static ToolStripDropDownMenu AutoScrollMinSize(this ToolStripDropDownMenu control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
             return control;
         }
 
+        public static ToolStripDropDownMenu AutoScrollMinSize(this ToolStripDropDownMenu control, Size size)
+        {
+            control.AutoScrollMinSize = size;
+            return control;
+        }
+
         public static ToolStripDropDownMenu AutoScrollPosition(this ToolStripDropDownMenu control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu AutoScrollPosition(this ToolStripDropDownMenu control, Point point)
+        {
+            control.AutoScrollPosition = point;
             return control;
         }
 
@@ -202,6 +232,18 @@ namespace WinFormsMarkup
         public static ToolStripDropDownMenu BackColor(this ToolStripDropDownMenu control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu BackColor(this ToolStripDropDownMenu control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu BackColor(this ToolStripDropDownMenu control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -229,9 +271,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripDropDownMenu ForeColor(this ToolStripDropDownMenu control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu ForeColor(this ToolStripDropDownMenu control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static ToolStripDropDownMenu ImageScalingSize(this ToolStripDropDownMenu control, int width, int height)
         {
             control.ImageScalingSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu ImageScalingSize(this ToolStripDropDownMenu control, Size size)
+        {
+            control.ImageScalingSize = size;
             return control;
         }
 
@@ -301,6 +361,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripDropDownMenu AutoScrollOffset(this ToolStripDropDownMenu control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static ToolStripDropDownMenu DataContext(this ToolStripDropDownMenu control, Object value)
         {
             control.DataContext = value;
@@ -325,6 +391,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripDropDownMenu Bounds(this ToolStripDropDownMenu control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu Bounds(this ToolStripDropDownMenu control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
+            return control;
+        }
+
         public static ToolStripDropDownMenu Capture(this ToolStripDropDownMenu control, Boolean value)
         {
             control.Capture = value;
@@ -334,6 +412,12 @@ namespace WinFormsMarkup
         public static ToolStripDropDownMenu ClientSize(this ToolStripDropDownMenu control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu ClientSize(this ToolStripDropDownMenu control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -373,9 +457,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static ToolStripDropDownMenu MaximumSize(this ToolStripDropDownMenu control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static ToolStripDropDownMenu MinimumSize(this ToolStripDropDownMenu control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu MinimumSize(this ToolStripDropDownMenu control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -394,6 +490,12 @@ namespace WinFormsMarkup
         public static ToolStripDropDownMenu Size(this ToolStripDropDownMenu control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu Size(this ToolStripDropDownMenu control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -958,6 +1060,12 @@ namespace WinFormsMarkup
         public static ToolStripDropDownMenu AddTo(this ToolStripDropDownMenu control, Control parent)
         {
             parent.Controls.Add(control);
+            return control;
+        }
+
+        public static ToolStripDropDownMenu Assign(this ToolStripDropDownMenu control, out ToolStripDropDownMenu variable)
+        {
+            variable = control;
             return control;
         }
 

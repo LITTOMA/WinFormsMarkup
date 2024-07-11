@@ -73,9 +73,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static NumericUpDown AutoScrollMargin(this NumericUpDown control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static NumericUpDown AutoScrollMinSize(this NumericUpDown control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static NumericUpDown AutoScrollMinSize(this NumericUpDown control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -88,6 +100,18 @@ namespace WinFormsMarkup
         public static NumericUpDown BackColor(this NumericUpDown control, int red, int green, int blue)
         {
             control.BackColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static NumericUpDown BackColor(this NumericUpDown control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static NumericUpDown BackColor(this NumericUpDown control, Color color)
+        {
+            control.BackColor = color;
             return control;
         }
 
@@ -121,6 +145,18 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static NumericUpDown ForeColor(this NumericUpDown control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static NumericUpDown ForeColor(this NumericUpDown control, Color color)
+        {
+            control.ForeColor = color;
+            return control;
+        }
+
         public static NumericUpDown InterceptArrowKeys(this NumericUpDown control, Boolean value)
         {
             control.InterceptArrowKeys = value;
@@ -133,9 +169,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static NumericUpDown MaximumSize(this NumericUpDown control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static NumericUpDown MinimumSize(this NumericUpDown control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static NumericUpDown MinimumSize(this NumericUpDown control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -193,6 +241,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static NumericUpDown AutoScrollPosition(this NumericUpDown control, Point point)
+        {
+            control.AutoScrollPosition = point;
+            return control;
+        }
+
         public static NumericUpDown AccessibleDefaultActionDescription(this NumericUpDown control, String value)
         {
             control.AccessibleDefaultActionDescription = value;
@@ -235,6 +289,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static NumericUpDown AutoScrollOffset(this NumericUpDown control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static NumericUpDown DataContext(this NumericUpDown control, Object value)
         {
             control.DataContext = value;
@@ -244,6 +304,18 @@ namespace WinFormsMarkup
         public static NumericUpDown Bounds(this NumericUpDown control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static NumericUpDown Bounds(this NumericUpDown control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static NumericUpDown Bounds(this NumericUpDown control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -262,6 +334,12 @@ namespace WinFormsMarkup
         public static NumericUpDown ClientSize(this NumericUpDown control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static NumericUpDown ClientSize(this NumericUpDown control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -289,6 +367,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static NumericUpDown Font(this NumericUpDown control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static NumericUpDown Height(this NumericUpDown control, Int32 value)
         {
             control.Height = value;
@@ -310,6 +394,12 @@ namespace WinFormsMarkup
         public static NumericUpDown Location(this NumericUpDown control, int x, int y)
         {
             control.Location = new Point(x, y);
+            return control;
+        }
+
+        public static NumericUpDown Location(this NumericUpDown control, Point point)
+        {
+            control.Location = point;
             return control;
         }
 
@@ -346,6 +436,12 @@ namespace WinFormsMarkup
         public static NumericUpDown Size(this NumericUpDown control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static NumericUpDown Size(this NumericUpDown control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -856,6 +952,12 @@ namespace WinFormsMarkup
         public static NumericUpDown AddControls(this NumericUpDown control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static NumericUpDown Assign(this NumericUpDown control, out NumericUpDown variable)
+        {
+            variable = control;
             return control;
         }
 

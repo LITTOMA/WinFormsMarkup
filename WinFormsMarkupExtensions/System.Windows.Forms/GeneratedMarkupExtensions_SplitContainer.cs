@@ -19,9 +19,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static SplitContainer AutoScrollOffset(this SplitContainer control, Point point)
+        {
+            control.AutoScrollOffset = point;
+            return control;
+        }
+
         public static SplitContainer AutoScrollMinSize(this SplitContainer control, int width, int height)
         {
             control.AutoScrollMinSize = new Size(width, height);
+            return control;
+        }
+
+        public static SplitContainer AutoScrollMinSize(this SplitContainer control, Size size)
+        {
+            control.AutoScrollMinSize = size;
             return control;
         }
 
@@ -31,9 +43,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static SplitContainer AutoScrollMargin(this SplitContainer control, Size size)
+        {
+            control.AutoScrollMargin = size;
+            return control;
+        }
+
         public static SplitContainer AutoScrollPosition(this SplitContainer control, int x, int y)
         {
             control.AutoScrollPosition = new Point(x, y);
+            return control;
+        }
+
+        public static SplitContainer AutoScrollPosition(this SplitContainer control, Point point)
+        {
+            control.AutoScrollPosition = point;
             return control;
         }
 
@@ -223,9 +247,33 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static SplitContainer BackColor(this SplitContainer control, int red, int green, int blue, int alpha)
+        {
+            control.BackColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static SplitContainer BackColor(this SplitContainer control, Color color)
+        {
+            control.BackColor = color;
+            return control;
+        }
+
         public static SplitContainer Bounds(this SplitContainer control, int x, int y, int width, int height)
         {
             control.Bounds = new Rectangle(x, y, width, height);
+            return control;
+        }
+
+        public static SplitContainer Bounds(this SplitContainer control, Point location, Size size)
+        {
+            control.Bounds = new Rectangle(location, size);
+            return control;
+        }
+
+        public static SplitContainer Bounds(this SplitContainer control, Rectangle rectangle)
+        {
+            control.Bounds = rectangle;
             return control;
         }
 
@@ -244,6 +292,12 @@ namespace WinFormsMarkup
         public static SplitContainer ClientSize(this SplitContainer control, int width, int height)
         {
             control.ClientSize = new Size(width, height);
+            return control;
+        }
+
+        public static SplitContainer ClientSize(this SplitContainer control, Size size)
+        {
+            control.ClientSize = size;
             return control;
         }
 
@@ -271,9 +325,27 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static SplitContainer Font(this SplitContainer control, Font font)
+        {
+            control.Font = font;
+            return control;
+        }
+
         public static SplitContainer ForeColor(this SplitContainer control, int red, int green, int blue)
         {
             control.ForeColor = Color.FromArgb(red, green, blue);
+            return control;
+        }
+
+        public static SplitContainer ForeColor(this SplitContainer control, int red, int green, int blue, int alpha)
+        {
+            control.ForeColor = Color.FromArgb(alpha, red, green, blue);
+            return control;
+        }
+
+        public static SplitContainer ForeColor(this SplitContainer control, Color color)
+        {
+            control.ForeColor = color;
             return control;
         }
 
@@ -301,6 +373,12 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static SplitContainer Location(this SplitContainer control, Point point)
+        {
+            control.Location = point;
+            return control;
+        }
+
         public static SplitContainer Margin(this SplitContainer control, Padding value)
         {
             control.Margin = value;
@@ -313,9 +391,21 @@ namespace WinFormsMarkup
             return control;
         }
 
+        public static SplitContainer MaximumSize(this SplitContainer control, Size size)
+        {
+            control.MaximumSize = size;
+            return control;
+        }
+
         public static SplitContainer MinimumSize(this SplitContainer control, int width, int height)
         {
             control.MinimumSize = new Size(width, height);
+            return control;
+        }
+
+        public static SplitContainer MinimumSize(this SplitContainer control, Size size)
+        {
+            control.MinimumSize = size;
             return control;
         }
 
@@ -346,6 +436,12 @@ namespace WinFormsMarkup
         public static SplitContainer Size(this SplitContainer control, int width, int height)
         {
             control.Size = new Size(width, height);
+            return control;
+        }
+
+        public static SplitContainer Size(this SplitContainer control, Size size)
+        {
+            control.Size = size;
             return control;
         }
 
@@ -856,6 +952,12 @@ namespace WinFormsMarkup
         public static SplitContainer AddControls(this SplitContainer control, params Control[] controls)
         {
             control.Controls.AddRange(controls);
+            return control;
+        }
+
+        public static SplitContainer Assign(this SplitContainer control, out SplitContainer variable)
+        {
+            variable = control;
             return control;
         }
 

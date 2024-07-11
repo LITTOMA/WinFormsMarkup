@@ -60,6 +60,25 @@ public class Program
 }
 ```
 
+## Hot Reload
+
+WinForms Markup supports hot reload, allowing you to make changes to your WinForms application while it is running. This feature is useful for quickly iterating on your UI design without restarting the application.
+
+**Note**: Hot reload is currently experimental and only supports single-form applications.
+
+To enable hot reload, use `HotReloadApplicationContext` instead of `ApplicationContext` when running your application:
+
+```csharp
+Application.Run(new HotReloadApplicationContext(BuildMainForm));
+
+static Form BuildMainForm()
+{
+    // Build your form here
+}
+```
+
+When you run your application, you can now make changes to your form-building function and see the updates reflected in the running application.
+
 ## Extension Methods
 
 WinForms Markup includes pre-generated extension methods for common WinForms controls, such as:

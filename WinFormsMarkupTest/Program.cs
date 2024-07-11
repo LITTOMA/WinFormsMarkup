@@ -12,9 +12,11 @@ internal static class Program
     {
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
+
         ApplicationConfiguration.Initialize();
-        Application.Run(BuildMainForm());
+        Application.Run(new HotReloadApplicationContext(BuildMainForm));
     }
+
 
     private static Form BuildMainForm()
     {
@@ -32,9 +34,9 @@ internal static class Program
                     .Assign(out var label),
                 new Button()
                     .Text("Click Me!")
-                    .Location((800 - 100) / 2, 40)
-                    .Size(100, 30)
-                    .OnClick((sender, e) => label.Text = $"Clicked {++clickCount} times")
+                    .Location((800 - 300) / 2, 40)
+                    .Size(300, 30)
+                    .OnClick((sender, e) => label.Text = $"Clicked {++clickCount} times!")
             );
     }
 }

@@ -13,24 +13,28 @@ internal static class Program
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
         ApplicationConfiguration.Initialize();
-        Application.Run(MainForm);
+        Application.Run(BuildMainForm());
     }
 
-    static Form MainForm =>
-        BuildMainForm();
-
-    private static Form BuildMainForm() =>
-        new Form()
+    private static Form BuildMainForm()
+    {
+        int clickCount = 0;
+        return new Form()
             .Text("WinForms Markup")
             .Size(800, 600)
             .FormBorderStyle(FormBorderStyle.Sizable)
             .AddControls(
                 new Label()
-                    .Text("Hello, WinFormsMarkup!")
-                    .Dock(DockStyle.Top),
+                    .Text("Hello, WinForms Markup!")
+                    .Anchor(AnchorStyles.Top | AnchorStyles.Left)
+                    .Location(10, 10)
+                    .Size(780, 20)
+                    .Assign(out var label),
                 new Button()
                     .Text("Click Me!")
-                    .Dock(DockStyle.Fill)
-                    .OnClick((sender, e) => ((Button)sender).Text = "Clicked!")
+                    .Location((800 - 100) / 2, 40)
+                    .Size(100, 30)
+                    .OnClick((sender, e) => label.Text = $"Clicked {++clickCount} times")
             );
+    }
 }

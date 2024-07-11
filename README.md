@@ -11,8 +11,10 @@ WinForms Markup is an experimental project designed to provide a modern, declara
 - **Support for Common WinForms Features**: Easily manage layout, event handling, and more.
 
 ## Installation
-
-> To be added.
+Install the `WinFormsMarkup` package from NuGet:
+``` shell
+dotnet add package WinFormsMarkup --version 1.0.0
+```
 
 ## Usage
 

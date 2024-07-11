@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReadmeFile>..\README.md</PackageReadmeFile>
 		<Version>1.0.1</Version>
 	</PropertyGroup>
 

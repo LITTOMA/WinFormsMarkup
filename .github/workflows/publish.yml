@@ -23,7 +23,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Pack WinFormsMarkup
-      run: dotnet pack WinFormsMarkup/WinFormsMarkupExtensions/WinFormsMarkup.csproj --configuration Release --output ./nupkg
+      run: dotnet pack WinFormsMarkupExtensions/WinFormsMarkup.csproj --configuration Release --output ./nupkg
 
     - name: Publish WinFormsMarkup to NuGet
       run: dotnet nuget push ./nupkg/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
@@ -31,7 +31,7 @@ jobs:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
 
     - name: Build WinFormsMarkupGenerator
-      run: dotnet publish WinFormsMarkup/WinFormsMarkupGenerator/WinFormsMarkupGenerator.csproj --configuration Release --output ./publish
+      run: dotnet publish WinFormsMarkupGenerator/WinFormsMarkupGenerator.csproj --configuration Release --output ./publish
 
     - name: Create GitHub Release
       id: create_release

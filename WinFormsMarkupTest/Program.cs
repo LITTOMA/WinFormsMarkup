@@ -22,20 +22,23 @@ internal static class Program
     {
         int clickCount = 0;
         return new Form()
+            .Assign(out var form)
             .Text("WinForms Markup")
             .Size(800, 600)
-            .FormBorderStyle(FormBorderStyle.Sizable)
+            .FormBorderStyle(FormBorderStyle.FixedSingle)
             .AddControls(
                 new Label()
+                    .Assign(out var label)
                     .Text("Hello, WinForms Markup!")
+                    .TextAlign(ContentAlignment.MiddleCenter)
                     .Anchor(AnchorStyles.Top | AnchorStyles.Left)
-                    .Location(10, 10)
                     .Size(780, 20)
-                    .Assign(out var label),
+                    .Location((form.Width - label.Width) / 2, (form.Height - label.Height) / 2 - label.Height),
                 new Button()
+                    .Assign(out var button)
                     .Text("Click Me!")
-                    .Location((800 - 300) / 2, 40)
                     .Size(300, 30)
+                    .Location((form.Width - button.Width) / 2, label.Location.Y + label.Height + 8)
                     .OnClick((sender, e) => label.Text = $"Clicked {++clickCount} times!")
             );
     }

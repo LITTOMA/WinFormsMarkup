@@ -105,10 +105,10 @@ wmgen.exe [input file].dll [output directory]
 ### Example
 
 ```
-wmgen.exe MyWinFormsApp.dll GeneratedExtensions
+wmgen.exe MyWinFormsControlLib.dll GeneratedExtensions
 ```
 
-This will generate C# source files with extension methods for each control found in `MyWinFormsApp.dll` and save them in the `GeneratedExtensions` directory.
+This will generate C# source files with extension methods for each control found in `MyWinFormsControlLib.dll` and save them in the `GeneratedExtensions` directory.
 
 ## Contributing
 

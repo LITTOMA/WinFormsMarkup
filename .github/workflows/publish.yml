@@ -29,7 +29,7 @@ jobs:
       run: dotnet pack WinFormsMarkupExtensions/WinFormsMarkup.csproj --configuration Release --output ./nupkg
 
     - name: Publish WinFormsMarkup to NuGet
-      run: dotnet nuget push ./nupkg/WinFormsMarkup.1.0.0.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push ./nupkg/WinFormsMarkup.1.0.0.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
 
